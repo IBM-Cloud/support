@@ -56,17 +56,19 @@
           <h4>Table of Contents</h4>
           <ul>
             <li><a href="#summary">Summary</a></li>
-            <!-- <li><a href="#componentsched">Schedule for Public Regions and Services</a></li> -->
-            <!-- <li><a href="#dcsched">Schedule per DataCenter and POD</a></li> -->
+            <li><a href="#componentsched">Schedule for Public Regions and Services</a></li>
+            <li><a href="#dcsched">Schedule per DataCenter and POD</a></li>
             <li><a href="#updates">Updates</a></li>
           </ul>
 
           <a name="summary"></a>
           <h4>Summary</h4>
 
-          <p>In order to address an urgent, industry-wide security advisory, all virtual machines in the world-wide IBM Cloud data centers will need to be patched over the next several days, between Jan 5 and Jan 8. Due to the nature of this vulnerability and the components which are affected, we are not able to mitigate this potential vulnerability via Hot Patching and Cloud Hosts reboots are required. The patches/restarts will be staggered to minimize the overall impact to IBM Cloud users.</p>
+          <p>In order to address an urgent, industry-wide security advisory, all virtual machines in the world-wide IBM Cloud data centers will need to be patched over the next several days, between Jan 5 and Jan 8. Due to the nature of this vulnerability
+            and the components which are affected, we are not able to mitigate this potential vulnerability via Hot Patching and Cloud Hosts reboots are required. The patches/restarts will be staggered to minimize the overall impact to IBM Cloud users.</p>
 
-          <p>In Public regions, because they are large and span multiple pods, we expect minimal disruption. In individual Dedicated regions that typically are contained within a single pod, there will be a disruption in service to the environment which will include the following impacts:</p>
+          <p>In Public regions, because they are large and span multiple pods, we expect minimal disruption. In individual Dedicated regions that typically are contained within a single pod, there will be a disruption in service to the environment which
+            will include the following impacts:</p>
 
           <ul>
             <li>IBM Cloud login and application management functions, such as staging, starting, stopping, and Services management might be unavailable.</li>
@@ -75,7 +77,8 @@
 
           <p>In addition, every application instance will be automatically restarted at least once. To minimize disruption, we recommend using at least 3 instances for critical applications.</p>
 
-          <p>Many of the services that IBM Cloud applications are bound to may also be temporarily unavailable as their data center servers are also restarted or patched. Most of these service restarts will take place during the same maintenance windows listed below. However, some services might be affected at times outside these windows by other data center dependencies.</p>
+          <p>Many of the services that IBM Cloud applications are bound to may also be temporarily unavailable as their data center servers are also restarted or patched. Most of these service restarts will take place during the same maintenance windows
+            listed below. However, some services might be affected at times outside these windows by other data center dependencies.</p>
 
           <p>For the US-SOUTH Public region (US South), the main windows will be:</p>
 
@@ -115,103 +118,158 @@
 
           <p>All times and durations are approximate and may be revised as we get closer to the event. Further detailed schedule information, as well as updates during the week, will be appended at the bottom of this page.</p>
 
-          <p>If you have a Dedicated IBM Cloud region, specific information, when available, may be posted on the private status page for your region (at [console-url]/status). You may also contact your IBM Client Success Manager or IBM Advocate for more information.</p>
+          <p>If you have a Dedicated IBM Cloud region, specific information, when available, may be posted on the private status page for your region (at [console-url]/status). You may also contact your IBM Client Success Manager or IBM Advocate for more
+            information.</p>
 
-          <p>In many cases, the duration of each interruption might be less than the full maintenance window. However, we strongly suggest that you take advantage of multi-region deployment of critical applications, where applicable, to minimize the disruption to your production applications. As previously mentioned, we also recommend using at least 3 instances for each critical application within each individual region.</p>
+          <p>In many cases, the duration of each interruption might be less than the full maintenance window. However, we strongly suggest that you take advantage of multi-region deployment of critical applications, where applicable, to minimize the disruption
+            to your production applications. As previously mentioned, we also recommend using at least 3 instances for each critical application within each individual region.</p>
 
-          <p>The IBM Cloud Engineering team will take all reasonable steps to minimize the disruption. We will closely monitor the progress and provide periodic general updates both on the main <a href="http://ibm.biz/ibmcloudstatus">IBM Cloud Status Page</a> and on this page, as necessary. </p>
+          <p>The IBM Cloud Engineering team will take all reasonable steps to minimize the disruption. We will closely monitor the progress and provide periodic general updates both on the main <a href="http://ibm.biz/ibmcloudstatus">IBM Cloud Status Page</a>            and on this page, as necessary. </p>
 
           <br/>
 
-          <!--
-<a name="componentsched"></a>
-<h4>Schedule for Public Regions and Services</h4>
+          <a name="componentsched"></a>
+          <h4>Schedule for Public Regions and Services</h4>
 
-<ul>
-  <li>All times in are in Universal Time (UTC)</li>
-  <li>All times and durations are approximate</li>
-  <li>Unless otherwise noted, expect that major Services within one IBM Cloud region may be unavailable (including for Syndication) during roughly the same time windows as the core IBM Cloud platform for that region</li>
-</ul>
-<table width="95%">
-<tbody>
+          <ul>
+            <li>All times in are in Universal Time (UTC)</li>
+            <li>All times and durations are approximate</li>
+            <li>Unless otherwise noted, expect that major Services within one IBM Cloud region may be unavailable (including for Syndication) during roughly the same time windows as the core IBM Cloud platform for that region</li>
+          </ul>
+          <table width="95%">
+            <tbody>
 
-<tr bgcolor="#BDD6EE">
-  <td width="161"><strong>Service or Component Name</strong>
-    <p></p>
-  </td>
-  <td width="204">
-    <p><strong>Maintenance Windows</strong></p>
-  </td>
-  <td width="172">
-    <p><strong>Notes</strong></p>
-  </td>
-</tr>
+              <tr bgcolor="#BDD6EE">
+                <td width="161"><strong>Service or Component Name</strong>
+                  <p></p>
+                </td>
+                <td width="204">
+                  <p><strong>Maintenance Windows</strong></p>
+                </td>
+                <td width="172">
+                  <p><strong>Notes</strong></p>
+                </td>
+              </tr>
 
-<tr>
-  <td width="161">
-    <p>Core IBM Cloud Platform</p>
-    <p>US-SOUTH (US South)</p>
-  </td>
-  <td width="204">
-    <p>2018-01-05, 07:30 - 09:00 UTC</p>
-    <p>2018-01-05, 15:00 - 18:00 UTC</p>
-    <p>2018-01-05, 19:30 - 22:30 UTC</p>
-    <p>2018-01-05, 23:00 - 2018-01-06, 02:30 UTC</p>
-    <p>2018-01-06, 06:30 - 08:00 UTC</p>
+              <!-- US South core -->
+              <tr>
+                <td width="161">
+                  <p>Core IBM Cloud Platform</p>
+                  <p>US-SOUTH (US South)</p>
+                </td>
+                <td width="204">
+                  <p>2018-01-05, 07:30 - 09:00 UTC</p>
+                  <p>2018-01-05, 15:00 - 18:00 UTC</p>
+                  <p>2018-01-05, 19:30 - 22:30 UTC</p>
+                  <p>2018-01-05, 23:00 - 2018-01-06, 02:30 UTC</p>
+                  <p>2018-01-06, 06:30 - 08:00 UTC</p>
 
-  </td>
-  <td width="172"></td>
-</tr>
+                </td>
+                <td width="172"></td>
+              </tr>
 
-<tr>
-  <td width="161">
-    <p>Core IBM Cloud Platform</p>
-    <p>US-EAST (US East)</p>
-  </td>
-  <td width="204">
-    <p>2018-01-07, 23:30 - 2018-01-08, 01:00 UTC</p>
-    <p>2018-01-07, 06:30 - 09:30 UTC</p>
+              <!-- US East core -->
+              <tr>
+                <td width="161">
+                  <p>Core IBM Cloud Platform</p>
+                  <p>US-EAST (US East)</p>
+                </td>
+                <td width="204">
+                  <p>2018-01-07, 23:30 - 2018-01-08, 01:00 UTC</p>
+                  <p>2018-01-07, 06:30 - 09:30 UTC</p>
 
-  </td>
-  <td width="172"></td>
-</tr>
+                </td>
+                <td width="172"></td>
+              </tr>
 
-<tr>
-    <td width="161">
-      <p>Core IBM Cloud Platform</p>
-      <p>EU-GB (United Kingdom)</p>
-    </td>
-    <td width="204">
-      <p>2018-01-05, 23:00 - 2018-01-06, 03:00 UTC</p>
-      <p>2018-01-06, 05:00 - 06:30 UTC</p>
+              <!-- United Kingdom core -->
+              <tr>
+                <td width="161">
+                  <p>Core IBM Cloud Platform</p>
+                  <p>EU-GB (United Kingdom)</p>
+                </td>
+                <td width="204">
+                  <p>2018-01-05, 23:00 - 2018-01-06, 03:00 UTC</p>
+                  <p>2018-01-06, 05:00 - 06:30 UTC</p>
+
+                </td>
+                <td width="172"></td>
+              </tr>
+
+              <!-- Germany core -->
+              <tr>
+                <td width="161">
+                  <p>Core IBM Cloud Platform</p>
+                  <p>EU-DE (Germany)</p>
+                </td>
+                <td width="204">
+                  <p>2018-01-05, 16:30 - 18:00 UTC</p>
+                  <p>2018-01-05, 21:00 - 22:30 UTC</p>
+
+                </td>
+                <td width="172"></td>
+              </tr>
+
+              <!-- Sydney core -->
+              <tr>
+                <td width="161">
+                  <p>Core IBM Cloud Platform</p>
+                  <p>AU-SYD (Sydney)</p>
+                </td>
+                <td width="204">
+                  <p>2018-01-06, 23:00 - 2018-01-07, 01:00 UTC</p>
+                </td>
+                <td width="172"></td>
+              </tr>
+
+              <!-- Watson IoT Platform - US South -->
+              <tr>
+                <td width="161">
+                  <p>Service: Watson IoT Platform</p>
+                  <p>US-SOUTH (US South)</p>
+                </td>
+                <td width="204">
+                  <p>2018-01-05, 16:30 - 20:00 UTC</p>
+                </td>
+                <td width="172"></td>
+              </tr>
+
+              <!-- Watson IoT Platform - United Kingdom -->
+              <tr>
+                <td width="161">
+                  <p>Service: Watson IoT Platform</p>
+                  <p>EU-GB (United Kingdom)</p>
+                </td>
+                <td width="204">
+                  <p>2018-01-05, 23:00 - 2018-01-06, 03:00 UTC</p>
+                </td>
+                <td width="172"></td>
+              </tr>
+
+              <!-- Watson IoT Platform - Germany -->
+              <tr>
+                  <td width="161">
+                    <p>Service: Watson IoT Platform</p>
+                    <p>EU-DE (Germany)</p>
+                  </td>
+                  <td width="204">
+                    <p>2018-01-05, 16:30 - 23:00 UTC</p>
+                  </td>
+                  <td width="172"></td>
+                </tr>
   
-    </td>
-    <td width="172"></td>
-  </tr>
+              <!-- WAS on Cloud -->
+              <tr>
+                  <td width="161">
+                    <p>Service: WAS on Cloud</p>
+                  </td>
+                  <td width="204"></td>
+                  <td width="172">
+                    <p>See Note 1 below</p>
+                  </td>
+                </tr>
   
-<tr>
-    <td width="161">
-      <p>Core IBM Cloud Platform</p>
-      <p>EU-DE (Germany)</p>
-    </td>
-    <td width="204">
-      <p>2018-01-05, 16:30 - 18:00 UTC</p>
-      <p>2018-01-05, 21:00 - 22:30 UTC</p>
-  
-    </td>
-    <td width="172"></td>
-  </tr>
-  
-<tr>
-    <td width="161">
-      <p>Core IBM Cloud Platform</p>
-      <p>AU-SYD (Sydney)</p>
-    </td>
-    <td width="204">
-      <p>2018-01-06, 23:00 -  2018-01-07, 01:00 UTC</p>
-    </td>
-    <td width="172"></td>
-  </tr>
+                  <!--
   
   <tr>
 <td width="161">
@@ -272,150 +330,109 @@ Authoring changes may have some training delays</p>
 </td>
 <td width="172"></td>
 </tr>
-
-</tbody>
-</table>
-
-<br/>
 -->
 
-          <!--
-<a name="dcsched"></a>
-<h4>Schedule per DataCenter and POD</h4>
-<div style="white-space: pre-line;">
-<strong>January 05</strong>
-1:30 AM CST - DAL05 Pod 4
-7:30 AM CST - DAL05 Pod 3
-9:00 AM CST - DAL05 Pod 4
+            </tbody>
+          </table>
+<strong>Notes:</strong>
+<ol>
+  <li><strong>WAS on Cloud</strong>: If you are not relying on host name resolutions in your virtual machine, you should not notice any disruptions to your 
+      running applications. However, if you are relying on host name resolutions and provisioned your service instance prior to 
+      2017-10-01, you can manually append the /etc/resolv.conf file in your virtual machine to use your preferred DNS server 
+      prior to the maintenance window to avoid any disruptions to your running applications . An alternate DNS server provided 
+      by the IBM Cloud platform is 10.0.80.11. For additional information, see 
+      <a href="https://console.bluemix.net/docs/services/ApplicationServeronCloud/networkEnvironment.html#dnsConfig">
+        https://console.bluemix.net/docs/services/ApplicationServeronCloud/networkEnvironment.html#dnsConfig</a> documentation.</li>
+</ol>
+          <br/>
 
-10:30 AM CST - DAL06 Pod 1
-12:00 PM CST - DAL06 Pod 2
-
-3:00 PM CST - DAL09 Pod 2
-1:30 PM CST - DAL09 Pod 1
-7:00 PM CST - DAL09 Pod 4
-5:00 PM CST - DAL09 Pod 3
-9:30 PM CST - DAL09 Pod 6
-
-11:00 PM CST - DAL10 Pod 1
-
-7:30 AM CST - CHE01 Pod 1
-
-9:00 AM CST - SEO01 Pod 1
-
-10:30 AM CST - FRA02 Pod 1
-3:00 PM CST - FRA02 Pod 2
-
-5:00 PM CST - LON02 Pod 1
-7:00 PM CST - LON02 Pod 2
-11:00 PM CST - LON04 Pod 1
-
-<strong>January 06</strong>
-12:30 AM CST - DAL10 Pod 2
-2:00 AM CST - DAL10 Pod 3
-
-3:30 AM CST - DAL12 Pod 1
-
-5:00 AM CST - DAL13 Pod 1
-
-12:30 AM CST - LON06 Pod 1
-3:30 AM CST - MEL01 Pod 1
-5:00 AM CST - MIL01 Pod 1
-7:30 AM CST - MON01 Pod 1
-9:00 AM CST - SAO01 Pod 1
-2:00 PM CST - OSL01 Pod 1
-3:30 PM CST - PAR01 Pod 1
-3:30 PM CST - SJC01 Pod 3
-5:00 PM CST - SYD04 Pod 1
-6:30 PM CST - SJC03 Pod 2
-6:30 PM CST - SYD01 Pod 1
-8:00 PM CST - SJC03 Pod 1
-8:00 PM CST - SNG01 Pod 2
-9:30 PM CST - TOK02 Pod 1
-
-12:01 am CST - MEX01 pod1
-
-12:01 am CST - DAL05 pod1
-01:30 am CST - DAL05 pod2
-03:00 am CST - DAL05 pod3
-04:30 am CST - DAL05 pod4
-
-12:30 am CST - MON01 pod2
-
-12:30 am CST - WDC04 pod2
-02:00 am CST - WDC04 pod3
-
-02:00 am CST - SEA01 pod1
-03:30 am CST - SEA01 pod2
-
-05:00 pm CST - AMS03 pod1
-06:30 pm CST - AMS03 pod2
-
-
-<strong>January 07</strong>
-
-12:01 am CST - DAL06 pod1
-01:30 am CST - DAL06 pod2
-
-02:00 am CST - SJC01 pod1
-03:30 am CST - SJC01 pod2
-05:00 am CST - SJC01 pod3
-10:00 am CST - TOK02 pod1
-
-05:00 pm CST - MIL01 pod1
-
-11:00 pm CST - WDC01 pod1
-
-
-<strong>January 08</strong>
-
-12:01 am CST - DAL10 pod1
- 
-12:30 am CST - WDC01 pod2
-02:00 am CST - WDC01 pod3
-03:30 am CST - WDC01 pod4
-05:00 am CST - WDC01 pod5
-06:30 am CST - WDC01 pod6
-
-05:00 pm CST - AMS01 pod1
-06:30 pm CST - AMS01 pod2
-
-
-<strong>November 20</strong>
-
-12:01 am CST - HOU02 pod2
-
-12:01 am CST - DAL01 pod4
-01:30 am CST - DAL01 pod5
-
-09:00 am CDT - SYD01 pod1
-
-11:00 am CDT - HKG02 pod1
-12:30 pm CDT - HKG02 pod2
-
-06:00 pm CDT - LON02 pod1
-07:30 pm CST - LON02 pod2
-
-10:00 pm CST - SAO01 pod1
-
-11:00 pm CST - TOR01 pod1
-
-
-<strong>November 21</strong>
-
-12:30 am CST - TOR01 pod2
-
-09:00 am CST - MEL01 pod1
-
-11:00 am CST - SNG01 pod1
-12:30 pm CST - SNG01 pod2
-
-01:30 pm CDT - CHE01 pod1
-
-05:00 pm CST - FRA02 pod1
-
+          <a name="dcsched"></a>
+          <h4>Schedule per DataCenter and POD</h4>
+          <div>
+            <strong>January 05</strong>
+<div style="font-family: monospace; white-space: pre-line;">
+DAL01 Pod 4 - 6:00 AM UTC
+AMS03 Pod 1 - 6:00 AM UTC
+DAL05 Pod 4 - 7:30 AM UTC
+AMS01 Pod 1 - 9:00 AM UTC
+DAL05 Pod 1 - 9:00 AM UTC
+AMS01 Pod 2 - 10:30 AM UTC
+DAL01 Pod 5 - 10:30 AM UTC
+AMS03 Pod 2 - 12:00 PM UTC
+DAL05 Pod 2 - 12:00 PM UTC
+DAL05 Pod 3 - 1:30 PM UTC
+CHE01 Pod 1 - 1:30 PM UTC
+SEO01 Pod 1 - 3:00 PM UTC
+DAL06 Pod 1 - 4:30 PM UTC
+FRA02 Pod 1 - 4:30 PM UTC
+DAL06 Pod 2 - 6:00 PM UTC
+HKG02 Pod 1 - 6:00 PM UTC
+DAL09 Pod 1 - 7:30 PM UTC
+HKG02 Pod 2 - 7:30 PM UTC
+DAL09 Pod 2 - 9:00 PM UTC
+FRA02 Pod 2 - 9:00 PM UTC
+DAL09 Pod 3 - 11:00 PM UTC
+LON02 Pod 1 - 11:00 PM UTC
 </div>
--->
+<br/>
+            <strong>January 06</strong>
+            <div style="font-family: monospace; white-space: pre-line;">
+DAL09 Pod 4 - 1:00 AM UTC
+LON02 Pod 2 - 1:00 AM UTC
+DAL09 Pod 6 - 3:30 AM UTC
+DAL10 Pod 1 - 5:00 AM UTC
+LON04 Pod 1 - 5:00 AM UTC
+DAL10 Pod 2 - 6:30 AM UTC
+LON06 Pod 1 - 6:30 AM UTC
+DAL10 Pod 3 - 8:00 AM UTC
+SNG01 Pod 1 - 8:00 AM UTC
+DAL12 Pod 1 - 9:30 AM UTC
+MEL01 Pod 1 - 9:30 AM UTC
+DAL13 Pod 1 - 11:00 AM UTC
+MIL01 Pod 1 - 11:00 AM UTC
+HOU02 Pod 2 - 1:30 PM UTC
+MON01 Pod 1 - 1:30 PM UTC
+SEA01 Pod 1 - 3:00 PM UTC
+SAO01 Pod 1 - 3:00 PM UTC
+SEA01 Pod 2 - 5:00 PM UTC
+MON01 Pod 2 - 6:30 PM UTC
+SJC01 Pod 1 - 6:30 PM UTC
+OSL01 Pod 1 - 8:00 PM UTC
+SJC01 Pod 2 - 8:00 PM UTC
+PAR01 Pod 1 - 9:30 PM UTC
+SJC01 Pod 3 - 9:30 PM UTC
+SYD04 Pod 1 - 11:00 PM UTC
+            </div>
+<br/>
+            <strong>January 07</strong>
+            <div style="font-family: monospace; white-space: pre-line;">
+SJC03 Pod 2 - 12:30 AM UTC
+SYD01 Pod 1 - 12:30 AM UTC
+SJC03 Pod 1 - 2:00 AM UTC
+SNG01 Pod 2 - 2:00 AM UTC
+SJC04 Pod 1 - 6:30 AM UTC
+TOK02 Pod 1 - 6:30 AM UTC
+TOR01 Pod 1 - 7:30 AM UTC
+TOR01 Pod 2 - 9:00 AM UTC
+WDC01 Pod 1 - 11:00 AM UTC
+WDC01 Pod 4 - 12:30 PM UTC
+WDC01 Pod 5 - 3:00 PM UTC
+WDC01 Pod 2 - 4:30 PM UTC
+WDC01 Pod 3 - 6:00 PM UTC
+WDC01 Pod 6 - 7:30 PM UTC
+WDC04 Pod 4 - 11:30 PM UTC
+            </div>
+<br/>
+            <strong>January 08</strong>
+            <div style="font-family: monospace; white-space: pre-line;">
+WDC04 Pod 1 - 1:00 AM UTC
+WDC04 Pod 2 - 3:30 AM UTC
+WDC04 Pod 3 - 5:00 AM UTC
+WDC06 Pod 1 - 6:30 AM UTC
+WDC07 Pod 1 - 8:00 AM UTC
+            </div>
+
+          </div>
 
           <a name="updates"></a>
           <h4>Updates</h4>
