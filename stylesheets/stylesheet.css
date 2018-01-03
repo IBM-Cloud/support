@@ -456,7 +456,7 @@ h1.title {
 }
 
 .wrapper {
-  width: 675px;
+  width: 60%;
   margin: 0 auto;
 }
 
@@ -832,9 +832,10 @@ footer .owner p a {
 }
 
 .markdown-body table {
-  width: 673px;
-  margin-left: -20px;
-  margin-right: -20px;
+  width: 100%;
+  /* width: 673px; */
+  /* margin-left: -20px; */
+  /* margin-right: -20px; */
 }
 
 .markdown-body tbody {
