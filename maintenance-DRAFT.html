@@ -265,13 +265,7 @@
                   </td>
                   <td width="204"></td>
                   <td width="172">
-                    <p>If you are not relying on host name resolutions in your virtual machine, you should not notice any disruptions to your 
-                      running applications. However, if you are relying on host name resolutions and provisioned your service instance prior to 
-                      2017-10-01, you can manually append the /etc/resolv.conf file in your virtual machine to use your preferred DNS server 
-                      prior to the maintenance window to avoid any disruptions to your running applications . An alternate DNS server provided 
-                      by the IBM Cloud platform is 10.0.80.11. For additional information, see 
-                      <a href="https://console.bluemix.net/docs/services/ApplicationServeronCloud/networkEnvironment.html#dnsConfig">
-                        https://console.bluemix.net/docs/services/ApplicationServeronCloud/networkEnvironment.html#dnsConfig</a> documentation.</p>
+                    <p>See Note 1 below</p>
                   </td>
                 </tr>
   
@@ -340,7 +334,16 @@ Authoring changes may have some training delays</p>
 
             </tbody>
           </table>
-
+<strong>Notes:</strong>
+<ol>
+  <li>If you are not relying on host name resolutions in your virtual machine, you should not notice any disruptions to your 
+      running applications. However, if you are relying on host name resolutions and provisioned your service instance prior to 
+      2017-10-01, you can manually append the /etc/resolv.conf file in your virtual machine to use your preferred DNS server 
+      prior to the maintenance window to avoid any disruptions to your running applications . An alternate DNS server provided 
+      by the IBM Cloud platform is 10.0.80.11. For additional information, see 
+      <a href="https://console.bluemix.net/docs/services/ApplicationServeronCloud/networkEnvironment.html#dnsConfig">
+        https://console.bluemix.net/docs/services/ApplicationServeronCloud/networkEnvironment.html#dnsConfig</a> documentation.</li>
+</ol>
           <br/>
 
           <a name="dcsched"></a>
