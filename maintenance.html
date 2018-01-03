@@ -2,6 +2,7 @@
 <!-- The Time Machine GitHub pages theme was designed and developed by Jon Rohan, on Feb 7, 2012. -->
 <!-- Follow him for fun. http://twitter.com/jonrohan. Tail his code on https://github.com/jonrohan -->
 <html>
+
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -11,8 +12,8 @@
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
   <script type="text/javascript" src="javascripts/script.js"></script>
 
-  <title>Bluemix Support</title>
-  <meta name="description" content="IBM Bluemix Support">
+  <title>IBM Cloud Support</title>
+  <meta name="description" content="IBM Cloud Support">
 
   <meta name="viewport" content="width=device-width,initial-scale=1">
 
@@ -22,141 +23,202 @@
 
   <div class="wrapper">
     <header>
-      <h1 class="title">Bluemix Support</h1>
+      <h1 class="title">IBM Cloud Support</h1>
     </header>
     <div id="container">
-      <p class="tagline">IBM Bluemix Support</p>
+      <p class="tagline">IBM Cloud Support</p>
       <div id="main" role="main">
-	<!-- 
+        <!-- 
         <div class="download-bar">
         <div class="inner">
-          <a href="https://github.com/IBM-Bluemix/support/tarball/master" class="download-button tar"><span>Download</span></a>
-          <a href="https://github.com/IBM-Bluemix/support/zipball/master" class="download-button zip"><span>Download</span></a>
-          <a href="https://github.com/IBM-Bluemix/support" class="code">View Bluemix Support on GitHub</a>
+          <a href="https://github.com/IBM-Cloud/support/tarball/master" class="download-button tar"><span>Download</span></a>
+          <a href="https://github.com/IBM-Cloud/support/zipball/master" class="download-button zip"><span>Download</span></a>
+          <a href="https://github.com/IBM-Cloud/support" class="code">View IBM Cloud Support on GitHub</a>
         </div>
         <span class="blc"></span><span class="trc"></span>
         </div>
         -->
         <article class="markdown-body">
           <h1>
-<a id="bluemix-platform-maintenance" class="anchor" href="#bluemix-platform-maintenance" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Bluemix platform maintenance</h1>
+            <a id="bluemix-platform-maintenance" class="anchor" href="#bluemix-platform-maintenance" aria-hidden="true">
+              <span aria-hidden="true" class="octicon octicon-link"></span>
+            </a>IBM Cloud maintenance</h1>
 
-<h2>
-  <a id="november-16-21-2016---all-regions" class="anchor" href="#november-16-21-2016---all-regions" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>November 16-21, 2016 - All regions</h2>
+          <h2>
+            <a id="january-05-08-2018---all-regions" class="anchor" href="#january-05-08-2018---all-regions" aria-hidden="true">
+              <span aria-hidden="true" class="octicon octicon-link"></span>
+            </a>January 05-08, 2018 - All regions</h2>
 
-<!--
-<p style="font-size:250%"><b>DRAFT - NOT FOR PUBLICATION</b></p>
--->
-    
-<p>Last Update: 2016-11-21 01:00 UTC  -  the maintenance in the EU-GB region is complete</p>
+          <!-- <p style="font-size:250%"><b>DRAFT - NOT FOR PUBLICATION</b></p> -->
 
-<h4>Table of Contents</h4>
-<ul>
-  <li><a href="#summary">Summary</a></li>
-  <li><a href="#componentsched">Schedule for Public Regions and Services</a></li>
-  <li><a href="#dcsched">Schedule per DataCenter and POD</li></h3>
-  <li><a href="#updates">Updates</li></h3>
-</ul> 
+          <!-- <p>Last Update: 2018-01-02 21:00 UTC  -  the maintenance in the EU-GB region is complete</p> -->
 
-<a name="summary"></a>
-<h4>Summary</h4>
+          <h4>Table of Contents</h4>
+          <ul>
+            <li><a href="#summary">Summary</a></li>
+            <!-- <li><a href="#componentsched">Schedule for Public Regions and Services</a></li> -->
+            <!-- <li><a href="#dcsched">Schedule per DataCenter and POD</a></li> -->
+            <li><a href="#updates">Updates</a></li>
+          </ul>
 
-<p>In order to address an urgent, industry-wide security advisory, all virtual machines in the world-wide Bluemix data centers will need to be patched and in some cases restarted over the next several days, between Nov 16 and Nov 21. The patches/restarts will be staggered to minimize the overall impact to Bluemix users.</p>
+          <a name="summary"></a>
+          <h4>Summary</h4>
 
-<p>While the maintenance is going on, you might experience several windows during which the following situations might occur:</p>
+          <p>In order to address an urgent, industry-wide security advisory, all virtual machines in the world-wide IBM Cloud data centers will need to be patched and in some cases restarted over the next several days, between Jan 5 and Jan 8. The patches/restarts
+            will be staggered to minimize the overall impact to IBM Cloud users.</p>
 
-<ul>
-<li>Bluemix login and application management functions, such as staging, starting, stopping, and Services management might be unavailable.</li>
-<li>Running applications might be temporarily unreachable.</li>
-</ul>
+          <p>While the maintenance is going on, you might experience several windows during which the following situations might occur:</p>
 
-<p>In addition, every application will be automatically restarted at least once. To minimize disruption, we recommend using at least 3 instances for critical applications.</p>
+          <ul>
+            <li>IBM Cloud login and application management functions, such as staging, starting, stopping, and Services management might be unavailable.</li>
+            <li>Running applications might be temporarily unreachable.</li>
+          </ul>
 
-<p>Many of the services that Bluemix applications are bound to may also be temporarily unavailable as their data center servers are also restarted or patched. Most of these service restarts will take place during the same maintenance windows listed below. However, some services might be affected at times outside these windows by other data center dependencies.</p>
+          <p>In addition, every application instance will be automatically restarted at least once. To minimize disruption, we recommend using at least 3 instances for critical applications.</p>
 
-<p>For the US-SOUTH Public region (US South), the main windows will be:</p>
+          <p>Many of the services that IBM Cloud applications are bound to may also be temporarily unavailable as their data center servers are also restarted or patched. Most of these service restarts will take place during the same maintenance windows
+            listed below. However, some services might be affected at times outside these windows by other data center dependencies. </p>
 
-<ul>
-<li>November 16, 06:00 - 12:00 UTC</li>
-<li>November 17, 10:30 - 12:30 UTC</li>
-<li>November 18, 06:00 - 08:00 UTC</li>
-</ul>
+          <p>For the US-SOUTH Public region (US South), the main windows will be:</p>
 
-<p>For the EU-GB Public region (United Kingdom), the main window will be:</p>
+          <ul>
+            <li>January 5, 07:30 - 09:00 UTC</li>
+            <li>January 5, 15:00 - 18:00 UTC</li>
+            <li>January 5, 19:30 - 22:30 UTC</li>
+            <li>January 5, 23:00 - January 6, 02:30 UTC</li>
+            <li>January 6, 06:30 - 08:00 UTC</li>
+          </ul>
 
-<ul>
-<li>November 21, 00:00 - 02:00 UTC</li>
-</ul>
+          <p>For the US-EAST region, the main window will be:</p>
 
-<p>For the AU-SYD Public region (Sydney), the main window will be:</p>
+          <ul>
+            <li>January 7, 23:30 - January 8, 01:00 UTC</li>
+            <li>January 8, 06:30 - 09:30 UTC</li>
+          </ul>
 
-<ul>
-<li>November 20, 15:00 - 17:00 UTC</li>
-</ul>
+          <p>For the EU-GB Public region (United Kingdom), the main window will be:</p>
 
-<p>All times and durations are approximate and may be revised as we get closer to the event. Further detailed schedule information, as well as updates during the week, will be appended at the bottom of this page.</p>
+          <ul>
+            <li>January 5, 23:00 - January 6, 03:00 UTC</li>
+            <li>January 6, 05:00 - 06:30 UTC</li>
+          </ul>
 
-<p>If you have a Dedicated Bluemix region, specific information, when available, may be posted on the private status page for your region (at [console-url]/status). You may also contact your IBM Client Success Manager or IBM Advocate for more information.</p>
+          <p>For the EU-DE region, the main window will be:</p>
+          <ul>
+            <li>January 5, 16:30 - 18:00 UTC</li>
+            <li>January 5, 21:00 - 22:30 UTC</li>
+          </ul>
 
-<p>In many cases, the duration of each interruption might be less than the full maintenance window. However, we strongly suggest that you take advantage of multi-region deployment of critical applications, where applicable, to minimize the disruption to your production applications. As previously mentioned, we also recommend using at least 3 instances for each critical application within each individual region. </p>
+          <p>For the AU-SYD Public region (Sydney), the main window will be:</p>
 
-<p>The Bluemix Engineering team will take all reasonable steps to minimize the disruption. We will closely monitor the progress and provide periodic general updates both on the main <a href="http://ibm.biz/bluemixstatus">Bluemix Status Page</a> and on this page, as necessary. </p>
+          <ul>
+            <li>January 6, 23:00 - January 7, 01:00 UTC</li>
+          </ul>
 
-<br/>
+          <p>All times and durations are approximate and may be revised as we get closer to the event. Further detailed schedule information, as well as updates during the week, will be appended at the bottom of this page.</p>
 
+          <p>If you have a Dedicated IBM Cloud region, specific information, when available, may be posted on the private status page for your region (at [console-url]/status). You may also contact your IBM Client Success Manager or IBM Advocate for more
+            information.
+          </p>
+
+          <p>In many cases, the duration of each interruption might be less than the full maintenance window. However, we strongly suggest that you take advantage of multi-region deployment of critical applications, where applicable, to minimize the disruption
+            to your production applications. As previously mentioned, we also recommend using at least 3 instances for each critical application within each individual region. </p>
+
+          <p>The IBM Cloud Engineering team will take all reasonable steps to minimize the disruption. We will closely monitor the progress and provide periodic general updates both on the main <a href="http://ibm.biz/bluemixstatus">IBM Cloud Status Page</a>            and on this page, as necessary. </p>
+
+          <br/>
+
+          <!--
 <a name="componentsched"></a>
 <h4>Schedule for Public Regions and Services</h4>
 
 <ul>
   <li>All times in are in Universal Time (UTC)</li>
   <li>All times and durations are approximate</li>
-  <li>Unless otherwise noted, expect that major Services within one Bluemix region may be unavailable (including for Syndication) during roughly the same time windows as the core Bluemix platform for that region</li>
+  <li>Unless otherwise noted, expect that major Services within one IBM Cloud region may be unavailable (including for Syndication) during roughly the same time windows as the core IBM Cloud platform for that region</li>
 </ul>
 <table width="95%">
 <tbody>
+
 <tr bgcolor="#BDD6EE">
-<td width="161"><strong>Service or Component Name</strong><p></p>
-</td>
-<td width="204">
-<p><strong>Maintenance Windows</strong></p>
-</td>
-<td width="172">
-<p><strong>Notes</strong></p>
-</td>
+  <td width="161"><strong>Service or Component Name</strong>
+    <p></p>
+  </td>
+  <td width="204">
+    <p><strong>Maintenance Windows</strong></p>
+  </td>
+  <td width="172">
+    <p><strong>Notes</strong></p>
+  </td>
 </tr>
+
 <tr>
-<td width="161">
-<p>Core Bluemix Platform</p>
-<p>US-SOUTH (US South)</p>
-</td>
-<td width="204">
-<p>2016-11-16,&nbsp;06:00 – 12:00 UTC</p>
-<p>2016-11-17,&nbsp;10:30 – 12:30 UTC</p>
-<p>2016-11-18,&nbsp;06:00 – 08:00 UTC</p>
-</td>
-<td width="172"></td>
+  <td width="161">
+    <p>Core IBM Cloud Platform</p>
+    <p>US-SOUTH (US South)</p>
+  </td>
+  <td width="204">
+    <p>2018-01-05, 07:30 - 09:00 UTC</p>
+    <p>2018-01-05, 15:00 - 18:00 UTC</p>
+    <p>2018-01-05, 19:30 - 22:30 UTC</p>
+    <p>2018-01-05, 23:00 - 2018-01-06, 02:30 UTC</p>
+    <p>2018-01-06, 06:30 - 08:00 UTC</p>
+
+  </td>
+  <td width="172"></td>
 </tr>
+
 <tr>
-<td width="161">
-<p>Core Bluemix Platform</p>
-<p>AU-SYD (Sydney)</p>
-</td>
-<td width="204">
-<p>2016-11-20, 15:00 - 17:00 UTC</p>
-</td>
-<td width="172"></td>
+  <td width="161">
+    <p>Core IBM Cloud Platform</p>
+    <p>US-EAST (US East)</p>
+  </td>
+  <td width="204">
+    <p>2018-01-07, 23:30 - 2018-01-08, 01:00 UTC</p>
+    <p>2018-01-07, 06:30 - 09:30 UTC</p>
+
+  </td>
+  <td width="172"></td>
 </tr>
+
 <tr>
-<td width="161">
-<p>Core Bluemix Platform</p>
-<p>EU-GB (United Kingdom)</p>
-</td>
-<td width="204">
-<p>2016-11-21, 00:00 – 02:00 UTC</p>
-</td>
-<td width="172"></td>
-</tr>
+    <td width="161">
+      <p>Core IBM Cloud Platform</p>
+      <p>EU-GB (United Kingdom)</p>
+    </td>
+    <td width="204">
+      <p>2018-01-05, 23:00 - 2018-01-06, 03:00 UTC</p>
+      <p>2018-01-06, 05:00 - 06:30 UTC</p>
+  
+    </td>
+    <td width="172"></td>
+  </tr>
+  
 <tr>
+    <td width="161">
+      <p>Core IBM Cloud Platform</p>
+      <p>EU-DE (Germany)</p>
+    </td>
+    <td width="204">
+      <p>2018-01-05, 16:30 - 18:00 UTC</p>
+      <p>2018-01-05, 21:00 - 22:30 UTC</p>
+  
+    </td>
+    <td width="172"></td>
+  </tr>
+  
+<tr>
+    <td width="161">
+      <p>Core IBM Cloud Platform</p>
+      <p>AU-SYD (Sydney)</p>
+    </td>
+    <td width="204">
+      <p>2018-01-06, 23:00 -  2018-01-07, 01:00 UTC</p>
+    </td>
+    <td width="172"></td>
+  </tr>
+  
+  <tr>
 <td width="161">
 <p>Service: IDS Track and Plan, Delivery Pipeline</p>
 </td>
@@ -215,33 +277,66 @@ Authoring changes may have some training delays</p>
 </td>
 <td width="172"></td>
 </tr>
+
 </tbody>
 </table>
 
 <br/>
+-->
 
+          <!--
 <a name="dcsched"></a>
 <h4>Schedule per DataCenter and POD</h4>
 <div style="white-space: pre-line;">
-<strong>November 16</strong>
+<strong>January 05</strong>
+1:30 AM CST - DAL05 Pod 4
+7:30 AM CST - DAL05 Pod 3
+9:00 AM CST - DAL05 Pod 4
 
-12:01 am CST - DAL09 pod1
-01:30 am CST - DAL09 pod2
-03:00 am CST - DAL09 pod3
-04:30 am CST - DAL09 pod4
-06:00 am CST - DAL09 pod6
- 
-02:00 am CST - SJC03 pod1
-03:30 am CST - SJC03 pod2
+10:30 AM CST - DAL06 Pod 1
+12:00 PM CST - DAL06 Pod 2
 
-05:00 pm CST - PAR01 pod1
+3:00 PM CST - DAL09 Pod 2
+1:30 PM CST - DAL09 Pod 1
+7:00 PM CST - DAL09 Pod 4
+5:00 PM CST - DAL09 Pod 3
+9:30 PM CST - DAL09 Pod 6
 
-11:00 pm CST - MON01 pod1
+11:00 PM CST - DAL10 Pod 1
 
-11:00 pm CST - WDC04 pod1
+7:30 AM CST - CHE01 Pod 1
 
+9:00 AM CST - SEO01 Pod 1
 
-<strong>November 17</strong>
+10:30 AM CST - FRA02 Pod 1
+3:00 PM CST - FRA02 Pod 2
+
+5:00 PM CST - LON02 Pod 1
+7:00 PM CST - LON02 Pod 2
+11:00 PM CST - LON04 Pod 1
+
+<strong>January 06</strong>
+12:30 AM CST - DAL10 Pod 2
+2:00 AM CST - DAL10 Pod 3
+
+3:30 AM CST - DAL12 Pod 1
+
+5:00 AM CST - DAL13 Pod 1
+
+12:30 AM CST - LON06 Pod 1
+3:30 AM CST - MEL01 Pod 1
+5:00 AM CST - MIL01 Pod 1
+7:30 AM CST - MON01 Pod 1
+9:00 AM CST - SAO01 Pod 1
+2:00 PM CST - OSL01 Pod 1
+3:30 PM CST - PAR01 Pod 1
+3:30 PM CST - SJC01 Pod 3
+5:00 PM CST - SYD04 Pod 1
+6:30 PM CST - SJC03 Pod 2
+6:30 PM CST - SYD01 Pod 1
+8:00 PM CST - SJC03 Pod 1
+8:00 PM CST - SNG01 Pod 2
+9:30 PM CST - TOK02 Pod 1
 
 12:01 am CST - MEX01 pod1
 
@@ -262,7 +357,7 @@ Authoring changes may have some training delays</p>
 06:30 pm CST - AMS03 pod2
 
 
-<strong>November 18</strong>
+<strong>January 07</strong>
 
 12:01 am CST - DAL06 pod1
 01:30 am CST - DAL06 pod2
@@ -277,7 +372,7 @@ Authoring changes may have some training delays</p>
 11:00 pm CST - WDC01 pod1
 
 
-<strong>November 19</strong>
+<strong>January 08</strong>
 
 12:01 am CST - DAL10 pod1
  
@@ -325,19 +420,20 @@ Authoring changes may have some training delays</p>
 05:00 pm CST - FRA02 pod1
 
 </div>
+-->
 
-<a name="updates"></a>
-<h4>Updates</h4>
+          <a name="updates"></a>
+          <h4>Updates</h4>
+          <!--
+<p>Update 2016-11-16 05:55 UTC: the first phase of the maintenance in the US-SOUTH region is starting</p>
 
-        <p>Update 2016-11-16 05:55 UTC: the first phase of the maintenance in the US-SOUTH region is starting</p>
+<p>Update 2016-11-16 12:30 UTC: the first phase of the maintenance in the US-SOUTH region is complete</p>
 
-        <p>Update 2016-11-16 12:30 UTC: the first phase of the maintenance in the US-SOUTH region is complete</p>
-        
-        <p>Update 2016-11-17 10:25 UTC: the second phase of the maintenance in the US-SOUTH region is starting</p>
-        
-        <p>Update 2016-11-17 12:45 UTC: the second phase of the maintenance in the US-SOUTH region is complete</p>
+<p>Update 2016-11-17 10:25 UTC: the second phase of the maintenance in the US-SOUTH region is starting</p>
 
-        <p>Update 2016-11-17 15:00 UTC: expanded the table of maintenance windows for regions/services</>
+<p>Update 2016-11-17 12:45 UTC: the second phase of the maintenance in the US-SOUTH region is complete</p>
+
+<p>Update 2016-11-17 15:00 UTC: expanded the table of maintenance windows for regions/services</p>
 
 <p>Update 2016-11-18 06:00 UTC: the third phase of the maintenance in the US-SOUTH region is starting</p>
 
@@ -350,13 +446,13 @@ Authoring changes may have some training delays</p>
 <p>Update 2016-11-21 00:00 UTC: the maintenance in the EU-GB region is starting</p>
 
 <p>Update 2016-11-21 01:00 UTC: the maintenance in the EU-GB region is complete</p>
-
+-->
         </article>
       </div>
     </div>
     <footer>
       <div class="owner">
-      <p><a href="https://github.com/IBM-Bluemix" class="avatar"><img src="https://avatars2.githubusercontent.com/u/7284885?v=3&amp;s=60" width="48" height="48"></a> <a href="https://github.com/IBM-Bluemix">IBM-Bluemix</a> maintains <a href="https://github.com/IBM-Bluemix/support">Bluemix Support</a></p>
+        <p><a href="https://github.com/IBM-Cloud" class="avatar"><img src="https://avatars2.githubusercontent.com/u/7284885?v=3&amp;s=60" width="48" height="48"></a> <a href="https://github.com/IBM-Cloud">IBM-Cloud</a> maintains <a href="https://github.com/IBM-Cloud/support">IBM Cloud Support</a></p>
 
 
       </div>
@@ -367,10 +463,10 @@ Authoring changes may have some training delays</p>
   </div>
   <div class="current-section">
     <a href="#top">Scroll to top</a>
-    <a href="https://github.com/IBM-Bluemix/support/tarball/master" class="tar">tar</a><a href="https://github.com/IBM-Bluemix/support/zipball/master" class="zip">zip</a><a href="" class="code">source code</a>
+    <a href="https://github.com/IBM-Cloud/support/tarball/master" class="tar">tar</a><a href="https://github.com/IBM-Cloud/support/zipball/master" class="zip">zip</a><a href="" class="code">source code</a>
     <p class="name"></p>
   </div>
 
 </body>
-</html>
 
+</html>
