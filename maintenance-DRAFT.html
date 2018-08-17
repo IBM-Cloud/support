@@ -64,10 +64,11 @@
           <a name="summary"></a>
           <h4>Summary</h4>
 
-          <p>In order to address an urgent, industry-wide security advisory, all virtual machines in the world-wide IBM Cloud data centers will need to be patched over the next several days, between Jan 5 and Jan 8. Due to the nature of this vulnerability
+          <p>In order to address an urgent, industry-wide security advisory, all virtual machines in the world-wide IBM Cloud data centers will need to be patched over the next several days, between Aug 22nd and Sept 8th. Due to the nature of this vulnerability
             and the components which are affected, we are not able to mitigate this potential vulnerability via Hot Patching and Cloud Hosts reboots are required. The patches/restarts will be staggered to minimize the overall impact to IBM Cloud users.</p>
 
-          <p>In Public regions, because they are large and span multiple pods, we expect minimal disruption. In individual Dedicated regions that typically are contained within a single pod, there will be a disruption in service to the environment which
+          <p>In Public regions, because they are large and span multiple pods, we expect minimal disruption to the overall platform, including Cloud Foundry applications. However, customers are responsible for managing their IBM Kubernetes Service worker machines. 
+              In individual Dedicated regions that typically are contained within a single pod, there will be a disruption in service to the environment which
             will include the following impacts:</p>
 
           <ul>
@@ -75,17 +76,17 @@
             <li>Running applications might be temporarily unreachable.</li>
           </ul>
 
-          <p>In addition, every application instance will be automatically restarted at least once. To minimize disruption, we recommend using at least 3 instances for critical applications.</p>
+          <p>In addition, every application instance will be automatically restarted at least once. To minimize disruption, we recommend using at least 3 instances for critical Cloud Foundry-based applications.</p>
 
           <p>Many of the services that IBM Cloud applications are bound to may also be temporarily unavailable as their data center servers are also restarted or patched. Most of these service restarts will take place during the same maintenance windows
             listed below. However, some services might be affected at times outside these windows by other data center dependencies.</p>
 
           <p>All times and durations are approximate and may be revised as we get closer to the event. Further detailed schedule information, as well as updates during the week, will be appended at the bottom of this page.</p>
 
-          <p>If you have a Dedicated IBM Cloud region, specific information, when available, may be posted on the private status page for your region (at [console-url]/status). You may also contact your IBM Client Success Manager or IBM Advocate for more
+          <p>If you have a Dedicated IBM Cloud region, specific information, when available, may be posted on the private status page for your region (at [console-url]/status). You may also contact your IBM Client Success Manager, Technical Account Manager, or IBM Advocate for more
             information.</p>
 
-          <p>In many cases, the duration of each interruption might be less than the full maintenance window. However, we strongly suggest that you take advantage of multi-region deployment of critical applications, where applicable, to minimize the disruption
+          <p>In many cases, the duration of each interruption might be less than the full maintenance window. However, we strongly suggest that you take advantage of multi-region deployment of critical Cloud Foundry-based applications, where applicable, to minimize the disruption
             to your production applications. As previously mentioned, we also recommend using at least 3 instances for each critical application within each individual region.</p>
 
           <p>The IBM Cloud Engineering team will take all reasonable steps to minimize the disruption. We will closely monitor the progress and provide periodic general updates both on the main <a href="http://ibm.biz/ibmcloudstatus">IBM Cloud Status Page</a>            and on this page, as necessary. </p>
