@@ -28,7 +28,7 @@
     <div id="container">
       <p class="tagline">IBM Cloud Support</p>
       <div id="main" role="main">
-        <!--
+        <!-- 
         <div class="download-bar">
         <div class="inner">
           <a href="https://github.com/IBM-Cloud/support/tarball/master" class="download-button tar"><span>Download</span></a>
@@ -49,10 +49,6 @@
               <span aria-hidden="true" class="octicon octicon-link"></span>
             </a>January 05-08, 2018 - All regions</h2>
 
-            <!-- <p style="font-size:250%"><b>DRAFT - NOT FOR PUBLICATION</b></p> -->
-
-          <!-- <p>Last Update: 2018-01-02 21:00 UTC  -  the maintenance in the EU-GB region is complete</p> -->
-
           <div>Last Update 2018-01-08 11:00 UTC: All maintenance is complete
           </div>
 
@@ -67,11 +63,10 @@
           <a name="summary"></a>
           <h4>Summary</h4>
 
-          <p>In order to address an urgent, industry-wide security advisory, all virtual machines in the world-wide IBM Cloud data centers will need to be patched over the next several days, between Aug 22nd and Sept 8th. Due to the nature of this vulnerability
+          <p>In order to address an urgent, industry-wide security advisory, all virtual machines in the world-wide IBM Cloud data centers will need to be patched over the next several days, between Jan 5 and Jan 8. Due to the nature of this vulnerability
             and the components which are affected, we are not able to mitigate this potential vulnerability via Hot Patching and Cloud Hosts reboots are required. The patches/restarts will be staggered to minimize the overall impact to IBM Cloud users.</p>
 
-          <p>In Public regions, because they are large and span multiple pods, we expect minimal disruption to the overall platform, including Cloud Foundry applications. However, customers are responsible for managing their IBM Kubernetes Service worker machines. 
-              In individual Dedicated regions that typically are contained within a single pod, there will be a disruption in service to the environment which
+          <p>In Public regions, because they are large and span multiple pods, we expect minimal disruption. In individual Dedicated regions that typically are contained within a single pod, there will be a disruption in service to the environment which
             will include the following impacts:</p>
 
           <ul>
@@ -79,17 +74,17 @@
             <li>Running applications might be temporarily unreachable.</li>
           </ul>
 
-          <p>In addition, every application instance will be automatically restarted at least once. To minimize disruption, we recommend using at least 3 instances for critical Cloud Foundry-based applications.</p>
+          <p>In addition, every application instance will be automatically restarted at least once. To minimize disruption, we recommend using at least 3 instances for critical applications.</p>
 
           <p>Many of the services that IBM Cloud applications are bound to may also be temporarily unavailable as their data center servers are also restarted or patched. Most of these service restarts will take place during the same maintenance windows
             listed below. However, some services might be affected at times outside these windows by other data center dependencies.</p>
 
           <p>All times and durations are approximate and may be revised as we get closer to the event. Further detailed schedule information, as well as updates during the week, will be appended at the bottom of this page.</p>
 
-          <p>If you have a Dedicated IBM Cloud region, specific information, when available, may be posted on the private status page for your region (at [console-url]/status). You may also contact your IBM Client Success Manager, Technical Account Manager, or IBM Advocate for more
+          <p>If you have a Dedicated IBM Cloud region, specific information, when available, may be posted on the private status page for your region (at [console-url]/status). You may also contact your IBM Client Success Manager or IBM Advocate for more
             information.</p>
 
-          <p>In many cases, the duration of each interruption might be less than the full maintenance window. However, we strongly suggest that you take advantage of multi-region deployment of critical Cloud Foundry-based applications, where applicable, to minimize the disruption
+          <p>In many cases, the duration of each interruption might be less than the full maintenance window. However, we strongly suggest that you take advantage of multi-region deployment of critical applications, where applicable, to minimize the disruption
             to your production applications. As previously mentioned, we also recommend using at least 3 instances for each critical application within each individual region.</p>
 
           <p>The IBM Cloud Engineering team will take all reasonable steps to minimize the disruption. We will closely monitor the progress and provide periodic general updates both on the main <a href="http://ibm.biz/ibmcloudstatus">IBM Cloud Status Page</a>            and on this page, as necessary. </p>
@@ -188,7 +183,7 @@
                   </td>
                   <td width="172"><p>Zero or minimal disruption expected.</p></td>
                 </tr>
-
+  
               <!-- API Connect - US South-->
               <tr>
                   <td width="161">
@@ -204,7 +199,7 @@
                     <p>Invoking API Calls will remain operational throughout the maintenance. However, there will be a disruption to management functions during maintenance periods.</p>
                   </td>
                 </tr>
-
+  
               <!-- API Connect - US East-->
               <tr>
                   <td width="161">
@@ -219,7 +214,7 @@
                     <p>Invoking API Calls will remain operational throughout the maintenance. However, there will be a disruption to management functions during maintenance periods.</p>
                   </td>
                 </tr>
-
+  
               <!-- API Connect - EU-GB-->
               <tr>
                   <td width="161">
@@ -234,7 +229,7 @@
                     <p>Invoking API Calls will remain operational throughout the maintenance. However, there will be a disruption to management functions during maintenance periods.</p>
                   </td>
                 </tr>
-
+  
               <!-- API Connect - EU-DE-->
               <tr>
                   <td width="161">
@@ -249,7 +244,7 @@
                     <p>Invoking API Calls will remain operational throughout the maintenance. However, there will be a disruption to management functions during maintenance periods.</p>
                   </td>
                 </tr>
-
+  
               <!-- API Connect - AU-SYD -->
               <tr>
                   <td width="161">
@@ -264,7 +259,7 @@
                     <p>Invoking API Calls will remain operational throughout the maintenance. However, there will be a disruption to management functions during maintenance periods.</p>
                   </td>
                 </tr>
-
+  
                   <!-- Dedicated Containers -->
               <tr>
                   <td width="161">
@@ -276,7 +271,7 @@
                     <p>For single containers and container groups in dedicated regions, IBM advises that customers stop any workload running on their dedicated container service gracefully prior to this outage. Information about when containers can be restarted will be coordinated with CSMs and communicated to customers once the container service is restored and validated by IBM.</p>
                   </td>
                 </tr>
-
+  
               <!-- Watson IoT Platform - US South -->
               <tr>
                   <td width="161">
@@ -288,7 +283,7 @@
                   </td>
                   <td width="172"></td>
                 </tr>
-
+  
                   <!-- Watson IoT Platform - United Kingdom -->
               <tr>
                 <td width="161">
@@ -312,7 +307,7 @@
                   </td>
                   <td width="172"></td>
                 </tr>
-
+  
               <!-- Watson Conversation -->
               <tr>
                   <td width="161">
@@ -326,7 +321,7 @@
                       <p>The training feature will not be available for short periods while the feature is rebooted.</p>
                     </td>
                 </tr>
-
+  
               <!-- Watson Conversation -->
               <tr>
                   <td width="161">
@@ -340,7 +335,7 @@
                       <p>The training feature will not be available for short periods while the feature is rebooted.</p>
                     </td>
                 </tr>
-
+  
               <!-- Watson Discovery -->
               <tr>
                   <td width="161">
@@ -354,7 +349,7 @@
                       <p>The training feature will not be available for short periods while the feature is rebooted.</p>
                     </td>
                 </tr>
-
+  
               <!-- Watson Discovery -->
               <tr>
                   <td width="161">
@@ -368,7 +363,7 @@
                       <p>The training feature will not be available for short periods while the feature is rebooted.</p>
                     </td>
                 </tr>
-
+  
               <!-- Watson Knowledge Studio -->
               <tr>
                   <td width="161">
@@ -382,7 +377,7 @@
                       <p>The service will not be available for short periods while components are rebooted.</p>
                     </td>
                 </tr>
-
+  
               <!-- Watson Knowledge Studio -->
               <tr>
                   <td width="161">
@@ -396,7 +391,7 @@
                       <p>The service will not be available for short periods while components are rebooted.</p>
                     </td>
                 </tr>
-
+  
               <!-- Watson Language Translator -->
               <tr>
                   <td width="161">
@@ -410,7 +405,7 @@
                       <p>The service will not be available for short periods while language components are rebooted.</p>
                     </td>
                 </tr>
-
+  
               <!-- Watson NLC -->
               <tr>
                   <td width="161">
@@ -466,7 +461,7 @@
                       <p>The service will not be available for short periods while components are rebooted.</p>
                     </td>
                 </tr>
-
+  
               <!-- Watson Visual Recognition -->
               <tr>
                   <td width="161">
@@ -480,7 +475,7 @@
                       <p>The feature to pass a URL to the service will be unavailable for periods during the maintenance window.</p>
                     </td>
                 </tr>
-
+  
               <!-- Watson Visual Recognition -->
               <tr>
                   <td width="161">
@@ -494,7 +489,7 @@
                       <p>The feature to pass a URL to the service will be unavailable for periods during the maintenance window.</p>
                     </td>
                 </tr>
-
+  
               <!-- WAS on Cloud -->
               <tr>
                   <td width="161">
@@ -505,7 +500,7 @@
                     <p>See Note 1 below</p>
                   </td>
                 </tr>
-
+  
               <!-- Db2 on Cloud / Db2 Warehouse on Cloud US South-->
               <tr>
                   <td width="161">
@@ -530,7 +525,7 @@
                     <p>See Notes 2 &amp; 3 below</p>
                   </td>
                 </tr>
-
+  
               <!-- Db2 on Cloud / Db2 Warehouse on Cloud UK-->
               <tr>
                   <td width="161">
@@ -602,14 +597,14 @@
 
               </tbody>
           </table>
-
+          
 <strong>Notes:</strong>
 <ol>
-  <li><strong>WAS on Cloud</strong>: If you are not relying on host name resolutions in your virtual machine, you should not notice any disruptions to your
-      running applications. However, if you are relying on host name resolutions and provisioned your service instance prior to
-      2017-10-01, you can manually append the /etc/resolv.conf file in your virtual machine to use your preferred DNS server
-      prior to the maintenance window to avoid any disruptions to your running applications . An alternate DNS server provided
-      by the IBM Cloud platform is 10.0.80.11. For additional information, see
+  <li><strong>WAS on Cloud</strong>: If you are not relying on host name resolutions in your virtual machine, you should not notice any disruptions to your 
+      running applications. However, if you are relying on host name resolutions and provisioned your service instance prior to 
+      2017-10-01, you can manually append the /etc/resolv.conf file in your virtual machine to use your preferred DNS server 
+      prior to the maintenance window to avoid any disruptions to your running applications . An alternate DNS server provided 
+      by the IBM Cloud platform is 10.0.80.11. For additional information, see 
       <a href="https://console.bluemix.net/docs/services/ApplicationServeronCloud/networkEnvironment.html#dnsConfig">
         https://console.bluemix.net/docs/services/ApplicationServeronCloud/networkEnvironment.html#dnsConfig</a> documentation.</li>
 
