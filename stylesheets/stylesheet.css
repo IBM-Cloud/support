@@ -98,6 +98,10 @@ a.doc-content {
   font-size: .875rem;
 } */
 
+.summary-details {
+  padding-left: 20px;
+}
+
 .pod-schedule {
   font-family: monospace;
   font-size: 1rem;
