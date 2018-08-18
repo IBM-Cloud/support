@@ -47,19 +47,19 @@
           <h2>
             <a id="january-05-08-2018---all-regions" class="anchor" href="#january-05-08-2018---all-regions" aria-hidden="true">
               <span aria-hidden="true" class="octicon octicon-link"></span>
-            </a>January 05-08, 2018 - All regions</h2>
+            </a>August 22 - September 08, 2018 - All regions</h2>
 
             <!-- <p style="font-size:250%"><b>DRAFT - NOT FOR PUBLICATION</b></p> -->
 
           <!-- <p>Last Update: 2018-01-02 21:00 UTC  -  the maintenance in the EU-GB region is complete</p> -->
 
-          <div>Last Update 2018-01-08 11:00 UTC: All maintenance is complete
+          <div>Last Update 2018-08-17 21:00 UTC: initial post
           </div>
 
           <h4>Table of Contents</h4>
           <ul>
             <li><a href="#summary">Summary</a></li>
-            <li><a href="#componentsched">Schedule for Public Regions and Services</a></li>
+            <!-- <li><a href="#componentsched">Schedule for Public Regions and Services</a></li> -->
             <li><a href="#dcsched">Schedule per DataCenter and POD</a></li>
             <li><a href="#updates">Updates</a></li>
           </ul>
@@ -70,7 +70,7 @@
           <p>In order to address an urgent, industry-wide security advisory, all virtual machines in the world-wide IBM Cloud data centers will need to be patched over the next several days, between Aug 22nd and Sept 8th. Due to the nature of this vulnerability
             and the components which are affected, we are not able to mitigate this potential vulnerability via Hot Patching and Cloud Hosts reboots are required. The patches/restarts will be staggered to minimize the overall impact to IBM Cloud users.</p>
 
-          <p>In Public regions, because they are large and span multiple pods, we expect minimal disruption to the overall platform, including Cloud Foundry applications. However, customers are responsible for managing their IBM Kubernetes Service worker machines. 
+          <p>In Public regions, because they are large and span multiple pods, we expect minimal disruption to the overall platform, including Cloud Foundry applications. However, customers are responsible for managing their IBM Kubernetes Service worker machines.
               In individual Dedicated regions that typically are contained within a single pod, there will be a disruption in service to the environment which
             will include the following impacts:</p>
 
@@ -95,7 +95,7 @@
           <p>The IBM Cloud Engineering team will take all reasonable steps to minimize the disruption. We will closely monitor the progress and provide periodic general updates both on the main <a href="http://ibm.biz/ibmcloudstatus">IBM Cloud Status Page</a>            and on this page, as necessary. </p>
 
           <br/>
-
+<!--
           <a name="componentsched"></a>
           <h4>Schedule for Public Regions and Services</h4>
 
@@ -119,622 +119,164 @@
                 </td>
               </tr>
 
-              <!-- US South core -->
               <tr>
                 <td width="161">
                   <p>Core IBM Cloud Platform</p>
                   <p>US-SOUTH (US South)</p>
                 </td>
                 <td width="204">
-                  <p>2018-01-05, 07:30 - 09:00 UTC</p>
-                  <p>2018-01-05, 16:30 - 18:00 UTC</p>
-                  <p>2018-01-05, 19:30 - 21:00 UTC</p>
-                  <p>2018-01-05, 21:00 - 22:30 UTC</p>
-                  <p>2018-01-06, 06:30 - 08:00 UTC</p>
+                  <p>2018-09-04, 05:00 UTC</p>
+                  <p>2018-09-04, 07:00 UTC</p>
+                  <p>2018-09-04, 09:00 UTC</p>
                 </td>
                 <td width="172"><p>Zero or minimal disruption expected.</p></td>
               </tr>
-
-              <!-- US East core -->
-              <tr>
-                <td width="161">
-                  <p>Core IBM Cloud Platform</p>
-                  <p>US-EAST (US East)</p>
-                </td>
-                <td width="204">
-                  <p>2018-01-07, 23:30 - 2018-01-08, 01:00 UTC</p>
-                  <p>2018-01-08, 06:30 - 08:00 UTC</p>
-                  <p>2018-01-08, 08:00 - 09:30 UTC</p>
-                </td>
-                <td width="172"><p>Zero or minimal disruption expected.</p></td>
-              </tr>
-
-              <!-- United Kingdom core -->
-              <tr>
-                <td width="161">
-                  <p>Core IBM Cloud Platform</p>
-                  <p>EU-GB (United Kingdom)</p>
-                </td>
-                <td width="204">
-                    <p>2018-01-05, 23:00 - 2018-01-06, 00:30 UTC</p>
-                    <p>2018-01-06, 01:00 - 02:30 UTC</p>
-                </td>
-                <td width="172"><p>Zero or minimal disruption expected.</p></td>
-              </tr>
-
-              <!-- Germany core -->
-              <tr>
-                <td width="161">
-                  <p>Core IBM Cloud Platform</p>
-                  <p>EU-DE (Germany)</p>
-                </td>
-                <td width="204">
-                  <p>2018-01-05, 16:30 - 18:00 UTC</p>
-                  <p>2018-01-05, 21:00 - 22:30 UTC</p>
-
-                </td>
-                <td width="172"><p>Zero or minimal disruption expected.</p></td>
-              </tr>
-
-              <!-- Sydney core -->
-              <tr>
-                  <td width="161">
-                    <p>Core IBM Cloud Platform</p>
-                    <p>AU-SYD (Sydney)</p>
-                  </td>
-                  <td width="204">
-                    <p>2018-01-06, 23:00 - 2018-01-07, 00:30 UTC</p>
-                    <p>2018-01-07, 00:30 - 02:00 UTC</p>
-                  </td>
-                  <td width="172"><p>Zero or minimal disruption expected.</p></td>
-                </tr>
-
-              <!-- API Connect - US South-->
-              <tr>
-                  <td width="161">
-                    <p>Service: API Connect</p>
-                    <p>US South</p>
-                  </td>
-                  <td width="204">
-                      <p>2018-01-05 19:30 - 21:00 UTC</p>
-                      <p>2018-01-05 21:00 - 22:30 UTC</p>
-                      <p>2018-01-06 01:00 - 02:30 UTC</p>
-                    </td>
-                  <td width="172">
-                    <p>Invoking API Calls will remain operational throughout the maintenance. However, there will be a disruption to management functions during maintenance periods.</p>
-                  </td>
-                </tr>
-
-              <!-- API Connect - US East-->
-              <tr>
-                  <td width="161">
-                    <p>Service: API Connect</p>
-                    <p>US East</p>
-                  </td>
-                  <td width="204">
-                      <p>2018-01-07 07:30 - 09:00 UTC</p>
-                      <p>2018-01-07 15:00 - 16:30 UTC</p>
-                    </td>
-                  <td width="172">
-                    <p>Invoking API Calls will remain operational throughout the maintenance. However, there will be a disruption to management functions during maintenance periods.</p>
-                  </td>
-                </tr>
-
-              <!-- API Connect - EU-GB-->
-              <tr>
-                  <td width="161">
-                    <p>Service: API Connect</p>
-                    <p>United Kingdom</p>
-                  </td>
-                  <td width="204">
-                      <p>2018-01-05 23:00 - 2018-01-06 00:30 UTC</p>
-                      <p>2018-01-06 01:00 - 02:30 UTC</p>
-                    </td>
-                  <td width="172">
-                    <p>Invoking API Calls will remain operational throughout the maintenance. However, there will be a disruption to management functions during maintenance periods.</p>
-                  </td>
-                </tr>
-
-              <!-- API Connect - EU-DE-->
-              <tr>
-                  <td width="161">
-                    <p>Service: API Connect</p>
-                    <p>Germany</p>
-                  </td>
-                  <td width="204">
-                      <p>2018-01-05 16:30 - 18:00 UTC</p>
-                      <p>2018-01-05 21:00 - 22:30 UTC</p>
-                    </td>
-                  <td width="172">
-                    <p>Invoking API Calls will remain operational throughout the maintenance. However, there will be a disruption to management functions during maintenance periods.</p>
-                  </td>
-                </tr>
-
-              <!-- API Connect - AU-SYD -->
-              <tr>
-                  <td width="161">
-                    <p>Service: API Connect</p>
-                    <p>Sydney</p>
-                  </td>
-                  <td width="204">
-                      <p>2018-01-06 09:30 - 11:00 UTC</p>
-                      <p>2018-01-07 00:30 - 02:00 UTC</p>
-                    </td>
-                  <td width="172">
-                    <p>Invoking API Calls will remain operational throughout the maintenance. However, there will be a disruption to management functions during maintenance periods.</p>
-                  </td>
-                </tr>
-
-                  <!-- Dedicated Containers -->
-              <tr>
-                  <td width="161">
-                    <p>IBM Container Service</p>
-                    <p>(Dedicated regions)</p>
-                  </td>
-                  <td width="204"></td>
-                  <td width="172">
-                    <p>For single containers and container groups in dedicated regions, IBM advises that customers stop any workload running on their dedicated container service gracefully prior to this outage. Information about when containers can be restarted will be coordinated with CSMs and communicated to customers once the container service is restored and validated by IBM.</p>
-                  </td>
-                </tr>
-
-              <!-- Watson IoT Platform - US South -->
-              <tr>
-                  <td width="161">
-                    <p>Service: Watson IoT Platform</p>
-                    <p>US-SOUTH (US South)</p>
-                  </td>
-                  <td width="204">
-                    <p>2018-01-05, 16:30 - 20:00 UTC</p>
-                  </td>
-                  <td width="172"></td>
-                </tr>
-
-                  <!-- Watson IoT Platform - United Kingdom -->
-              <tr>
-                <td width="161">
-                  <p>Service: Watson IoT Platform</p>
-                  <p>EU-GB (United Kingdom)</p>
-                </td>
-                <td width="204">
-                  <p>2018-01-05, 23:00 - 2018-01-06, 03:00 UTC</p>
-                </td>
-                <td width="172"></td>
-              </tr>
-
-              <!-- Watson IoT Platform - Germany -->
-              <tr>
-                  <td width="161">
-                    <p>Service: Watson IoT Platform</p>
-                    <p>EU-DE (Germany)</p>
-                  </td>
-                  <td width="204">
-                    <p>2018-01-05, 16:30 - 23:00 UTC</p>
-                  </td>
-                  <td width="172"></td>
-                </tr>
-
-              <!-- Watson Conversation -->
-              <tr>
-                  <td width="161">
-                    <p>Service: Watson Conversation</p>
-                    <p>US South, United Kingdom &amp; Sydney</p>
-                  </td>
-                  <td width="204">
-                    <p>2018-01-06, 05:00 - 12:30 UTC</p>
-                  </td>
-                  <td width="172">
-                      <p>The training feature will not be available for short periods while the feature is rebooted.</p>
-                    </td>
-                </tr>
-
-              <!-- Watson Conversation -->
-              <tr>
-                  <td width="161">
-                    <p>Service: Watson Conversation</p>
-                    <p>Germany</p>
-                  </td>
-                  <td width="204">
-                    <p>2018-01-05, 16:30 - 18:00 UTC</p>
-                  </td>
-                  <td width="172">
-                      <p>The training feature will not be available for short periods while the feature is rebooted.</p>
-                    </td>
-                </tr>
-
-              <!-- Watson Discovery -->
-              <tr>
-                  <td width="161">
-                    <p>Service: Watson Discovery</p>
-                    <p>US South, United Kingdom &amp; Sydney</p>
-                  </td>
-                  <td width="204">
-                    <p>2018-01-06, 05:00 - 12:30 UTC</p>
-                  </td>
-                  <td width="172">
-                      <p>The training feature will not be available for short periods while the feature is rebooted.</p>
-                    </td>
-                </tr>
-
-              <!-- Watson Discovery -->
-              <tr>
-                  <td width="161">
-                    <p>Service: Watson Discovery</p>
-                    <p>Germany</p>
-                  </td>
-                  <td width="204">
-                      <p>2018-01-05, 16:30 - 18:00 UTC</p>
-                    </td>
-                  <td width="172">
-                      <p>The training feature will not be available for short periods while the feature is rebooted.</p>
-                    </td>
-                </tr>
-
-              <!-- Watson Knowledge Studio -->
-              <tr>
-                  <td width="161">
-                    <p>Service: Watson Knowledge Studio</p>
-                    <p>US South, United Kingdom &amp; Sydney</p>
-                  </td>
-                  <td width="204">
-                      <p>2018-01-06, 05:00 - 08:00 UTC</p>
-                    </td>
-                  <td width="172">
-                      <p>The service will not be available for short periods while components are rebooted.</p>
-                    </td>
-                </tr>
-
-              <!-- Watson Knowledge Studio -->
-              <tr>
-                  <td width="161">
-                    <p>Service: Watson Knowledge Studio</p>
-                    <p>Germany</p>
-                  </td>
-                  <td width="204">
-                      <p>2018-01-05, 16:30 - 18:00 UTC</p>
-                    </td>
-                  <td width="172">
-                      <p>The service will not be available for short periods while components are rebooted.</p>
-                    </td>
-                </tr>
-
-              <!-- Watson Language Translator -->
-              <tr>
-                  <td width="161">
-                    <p>Service: Watson Language Translator</p>
-                    <p>Germany</p>
-                  </td>
-                  <td width="204">
-                      <p>2018-01-05, 16:30 - 18:00 UTC</p>
-                    </td>
-                  <td width="172">
-                      <p>The service will not be available for short periods while language components are rebooted.</p>
-                    </td>
-                </tr>
-
-              <!-- Watson NLC -->
-              <tr>
-                  <td width="161">
-                    <p>Service: Watson Natural Language Classifier</p>
-                    <p>US South, United Kingdom &amp; Sydney</p>
-                  </td>
-                  <td width="204">
-                    <p>2018-01-06, 05:00 - 12:30 UTC</p>
-                  </td>
-                  <td width="172">
-                      <p>The training feature will not be available for short periods while the feature is rebooted.</p>
-                    </td>
-                </tr>
-
-              <!-- Watson NLU -->
-              <tr>
-                  <td width="161">
-                    <p>Service: Watson Natural Language Understanding</p>
-                    <p>US South, United Kingdom &amp; Sydney</p>
-                  </td>
-                  <td width="204">
-                    <p>2018-01-06, 05:00 - 08:00 UTC</p>
-                  </td>
-                  <td width="172">
-                      <p>The feature to pass a URL to the service will be unavailable for periods during maintenance window.</p>
-                    </td>
-                </tr>
-
-              <!-- Watson NLU -->
-              <tr>
-                  <td width="161">
-                    <p>Service: Watson Natural Language Understanding</p>
-                    <p>Germany</p>
-                  </td>
-                  <td width="204">
-                    <p>2018-01-05, 21:00 - 22:30 UTC</p>
-                  </td>
-                  <td width="172">
-                      <p>The feature to pass a URL to the service will be unavailable for periods during maintenance window.</p>
-                    </td>
-                </tr>
-
-              <!-- Watson Relationship Extraction -->
-              <tr>
-                  <td width="161">
-                    <p>Service: Watson Relationship Extraction</p>
-                    <p>Germany</p>
-                  </td>
-                  <td width="204">
-                      <p>2018-01-05, 16:30 - 18:00 UTC</p>
-                    </td>
-                  <td width="172">
-                      <p>The service will not be available for short periods while components are rebooted.</p>
-                    </td>
-                </tr>
-
-              <!-- Watson Visual Recognition -->
-              <tr>
-                  <td width="161">
-                    <p>Service: Watson Visual Recognition</p>
-                    <p>US South, United Kingdom &amp; Sydney</p>
-                  </td>
-                  <td width="204">
-                      <p>2018-01-06, 05:00 - 08:00 UTC</p>
-                    </td>
-                  <td width="172">
-                      <p>The feature to pass a URL to the service will be unavailable for periods during the maintenance window.</p>
-                    </td>
-                </tr>
-
-              <!-- Watson Visual Recognition -->
-              <tr>
-                  <td width="161">
-                    <p>Service: Watson Visual Recognition</p>
-                    <p>Germany</p>
-                  </td>
-                  <td width="204">
-                      <p>2018-01-05, 21:00 - 22:30 UTC</p>
-                    </td>
-                  <td width="172">
-                      <p>The feature to pass a URL to the service will be unavailable for periods during the maintenance window.</p>
-                    </td>
-                </tr>
-
-              <!-- WAS on Cloud -->
-              <tr>
-                  <td width="161">
-                    <p>Service: WAS on Cloud</p>
-                  </td>
-                  <td width="204"></td>
-                  <td width="172">
-                    <p>See Note 1 below</p>
-                  </td>
-                </tr>
-
-              <!-- Db2 on Cloud / Db2 Warehouse on Cloud US South-->
-              <tr>
-                  <td width="161">
-                    <p>Service: Db2 Warehouse on Cloud</p>
-                    <p>Service: Db2 on Cloud</p>
-                    <p>US-South (US South)</p>
-                  </td>
-                  <td width="204">
-                      <p>DAL06: 2018-01-05, 18:00 - 19:30 UTC</p>
-                      <p>DAL09: 2018-01-05, 19:30 - 2018-01-06, 05:00 UTC</p>
-                      <p>DAL10: 2018-01-06, 05:00 - 08:00 UTC</p>
-                      <p>DAL12: 2018-01-06, 09:30 - 11:00 UTC</p>
-                      <p>DAL13: 2018-01-06, 11:00 - 12:30 UTC</p>
-                      <p>MON01: 2018-01-06, 13:30 - 15:00 UTC</p>
-                      <p>SAO01: 2018-01-06, 15:00 - 16:30 UTC</p>
-                      <p>SJC03: 2018-01-07, 12:30 - 03:30 UTC</p>
-                      <p>TOR01: 2018-01-07, 07:30 - 09:00 UTC</p>
-                      <p>WDC01: 2018-01-07, 15:00 - 16:30 UTC</p>
-                      <p>WDC04: 2018-01-08, 01:00 - 06:30 UTC</p>
-                  </td>
-                  <td width="172">
-                    <p>See Notes 2 &amp; 3 below</p>
-                  </td>
-                </tr>
-
-              <!-- Db2 on Cloud / Db2 Warehouse on Cloud UK-->
-              <tr>
-                  <td width="161">
-                    <p>Service: Db2 Warehouse on Cloud</p>
-                    <p>Service: Db2 on Cloud</p>
-                    <p>EU-GB (United Kingdom)</p>
-                  </td>
-                  <td width="204">
-                      <p>AMS03: 2018-01-05, 06:00 - 07:30 UTC</p>
-                      <p>FRA02: 2018-01-05, 16:30 - 22:30 UTC</p>
-                      <p>LON02: 2018-01-05, 23:00 - 2018-01-06 02:30 UTC</p>
-                      <p>MIL01: 2018-01-06, 11:00 - 12:30 UTC</p>
-                      <p>PAR01: 2018-01-06, 21:30 - 23:00 UTC</p>
-                  </td>
-                  <td width="172">
-                    <p>See Note 2 below</p>
-                  </td>
-                </tr>
-
-              <!-- Db2 on Cloud / Db2 Warehouse on Cloud Germany-->
-              <tr>
-                  <td width="161">
-                    <p>Service: Db2 Warehouse on Cloud</p>
-                    <p>Service: Db2 on Cloud</p>
-                    <p>EU-DE (Germany)</p>
-                  </td>
-                  <td width="204">
-                      <p>FRA02: 2018-01-05, 16:30 - 22:30 UTC</p>
-                  </td>
-                  <td width="172">
-                    <p>See Note 2 below</p>
-                  </td>
-                </tr>
-
-              <!-- Db2 on Cloud / Db2 Warehouse on Cloud Sydney-->
-              <tr>
-                  <td width="161">
-                    <p>Service: Db2 Warehouse on Cloud</p>
-                    <p>Service: Db2 on Cloud</p>
-                    <p>AU-SYD (Sydney)</p>
-                  </td>
-                  <td width="204">
-                      <p>CHE01: 2018-01-05, 13:30 - 15:00 UTC</p>
-                      <p>SEO01: 2018-01-05, 15:00 - 16:30 UTC</p>
-                      <p>HKG02: 2018-01-05, 18:00 - 19:30 UTC</p>
-                      <p>SYD01: 2018-01-07, 00:30 - 02:00 UTC</p>
-                      <p>SNG01: 2018-01-07, 02:00 - 03:30 UTC</p>
-                      <p>TOK02: 2018-01-07, 06:30 - 08:00 UTC</p>
-                  </td>
-                  <td width="172">
-                    <p>See Note 2 below</p>
-                  </td>
-                </tr>
-
-              <!-- Db2 on Cloud / Db2 Warehouse on Cloud Dedicated regions-->
-              <tr>
-                  <td width="161">
-                    <p>Service: Db2 Warehouse on Cloud</p>
-                    <p>Service: Db2 on Cloud</p>
-                    <p>(Dedicated regions)</p>
-                  </td>
-                  <td width="204">
-                      <p>See the times above in the rows for Db2 Warehouse on Cloud and Db2 on Cloud public regions.</p>
-                  </td>
-                  <td width="172">
-                    <p>See Note 2 below</p>
-                  </td>
-                </tr>
-
-              </tbody>
+            </tbody>
           </table>
-
-<strong>Notes:</strong>
-<ol>
-  <li><strong>WAS on Cloud</strong>: If you are not relying on host name resolutions in your virtual machine, you should not notice any disruptions to your
-      running applications. However, if you are relying on host name resolutions and provisioned your service instance prior to
-      2017-10-01, you can manually append the /etc/resolv.conf file in your virtual machine to use your preferred DNS server
-      prior to the maintenance window to avoid any disruptions to your running applications . An alternate DNS server provided
-      by the IBM Cloud platform is 10.0.80.11. For additional information, see
-      <a href="https://console.bluemix.net/docs/services/ApplicationServeronCloud/networkEnvironment.html#dnsConfig">
-        https://console.bluemix.net/docs/services/ApplicationServeronCloud/networkEnvironment.html#dnsConfig</a> documentation.</li>
-
-    <li><strong>Db2 Warehouse on Cloud and Db2 on Cloud</strong>: Only customers running Db2 Warehouse on Cloud SMP Small plans, Db2 on Cloud Precise Performance 500 (2.8.500) and Db2 on Cloud Flex plans are affected by this maintenance. These instance plans will not be available for short periods while components are rebooted.</li>
-
-    <li><strong>Db2 Warehouse on Cloud</strong>: Db2 Warehouse on Cloud Entry customers running on the host dashdb-entry-yp-dal09-09.services.dal.bluemix.net will be affected by this maintenance. All other Entry customers are unaffected.</li>
-</ol>
+          <strong>Notes:</strong>
+          <ol>
+            <li><strong>ServiceName</strong>: notes</li>
+          </ol>
+-->
           <br/>
 
           <a name="dcsched"></a>
           <h4>Schedule per DataCenter and POD</h4>
           <div>
-            <strong>January 05</strong>
+<strong>August 22</strong>
 <div style="font-family: monospace; white-space: pre-line;">
-DAL01 Pod 4 - 6:00 AM UTC
-AMS03 Pod 1 - 6:00 AM UTC
-DAL09 Pod 2 - 0:00 AM UTC
-DAL05 Pod 4 - 7:30 AM UTC
-AMS01 Pod 1 - 9:00 AM UTC
-DAL05 Pod 1 - 9:00 AM UTC
-AMS01 Pod 2 - 10:30 AM UTC
-DAL01 Pod 5 - 10:30 AM UTC
-AMS03 Pod 2 - 12:00 PM UTC
-DAL05 Pod 2 - 12:00 PM UTC
-DAL05 Pod 3 - 1:30 PM UTC
-CHE01 Pod 1 - 1:30 PM UTC
-SEO01 Pod 1 - 3:00 PM UTC
-DAL06 Pod 1 - 4:30 PM UTC
-FRA02 Pod 1 - 4:30 PM UTC
-DAL06 Pod 2 - 6:00 PM UTC
-HKG02 Pod 1 - 6:00 PM UTC
-DAL09 Pod 1 - 7:30 PM UTC
-HKG02 Pod 2 - 7:30 PM UTC
-DAL09 Pod 2 - 9:00 PM UTC
-FRA02 Pod 2 - 9:00 PM UTC
-DAL09 Pod 3 - 11:00 PM UTC
-LON02 Pod 1 - 11:00 PM UTC
+MEX01    POD 1    05:00 UTC
 </div>
 <br/>
-            <strong>January 06</strong>
-            <div style="font-family: monospace; white-space: pre-line;">
-DAL09 Pod 4 - 1:00 AM UTC
-LON02 Pod 2 - 1:00 AM UTC
-DAL09 Pod 6 - 3:30 AM UTC
-DAL10 Pod 1 - 5:00 AM UTC
-LON04 Pod 1 - 5:00 AM UTC
-DAL10 Pod 2 - 6:30 AM UTC
-LON06 Pod 1 - 6:30 AM UTC
-DAL10 Pod 3 - 8:00 AM UTC
-SNG01 Pod 1 - 8:00 AM UTC
-DAL12 Pod 1 - 9:30 AM UTC
-MEL01 Pod 1 - 9:30 AM UTC
-DAL13 Pod 1 - 11:00 AM UTC
-MIL01 Pod 1 - 11:00 AM UTC
-HOU02 Pod 2 - 1:30 PM UTC
-MON01 Pod 1 - 1:30 PM UTC
-SEA01 Pod 1 - 3:00 PM UTC
-SAO01 Pod 1 - 3:00 PM UTC
-SEA01 Pod 2 - 5:00 PM UTC
-MON01 Pod 2 - 6:30 PM UTC
-SJC01 Pod 1 - 6:30 PM UTC
-OSL01 Pod 1 - 8:00 PM UTC
-SJC01 Pod 2 - 8:00 PM UTC
-PAR01 Pod 1 - 9:30 PM UTC
-SJC01 Pod 3 - 9:30 PM UTC
-SYD04 Pod 1 - 11:00 PM UTC
-            </div>
-<br/>
-            <strong>January 07</strong>
-            <div style="font-family: monospace; white-space: pre-line;">
-SJC03 Pod 2 - 12:30 AM UTC
-SYD01 Pod 1 - 12:30 AM UTC
-SJC03 Pod 1 - 2:00 AM UTC
-SNG01 Pod 2 - 2:00 AM UTC
-SJC04 Pod 1 - 3:30 AM UTC
-TOK02 Pod 1 - 3:30 AM UTC
-TOR01 Pod 1 - 7:30 AM UTC
-TOR01 Pod 2 - 9:00 AM UTC
-WDC01 Pod 1 - 11:00 AM UTC
-WDC01 Pod 4 - 12:30 PM UTC
-WDC01 Pod 5 - 3:00 PM UTC
-WDC01 Pod 2 - 4:30 PM UTC
-WDC01 Pod 3 - 6:00 PM UTC
-WDC01 Pod 6 - 7:30 PM UTC
-WDC04 Pod 4 - 11:30 PM UTC
-            </div>
-<br/>
-            <strong>January 08</strong>
-            <div style="font-family: monospace; white-space: pre-line;">
-WDC04 Pod 1 - 1:00 AM UTC
-WDC04 Pod 2 - 3:30 AM UTC
-WDC04 Pod 3 - 5:00 AM UTC
-WDC06 Pod 1 - 6:30 AM UTC
-WDC07 Pod 1 - 8:00 AM UTC
-            </div>
 
+<strong>August 23</strong>
+<div style="font-family: monospace; white-space: pre-line;">
+CHE01    POD 1    21:00 UTC
+</div>
+
+<br/>
+<strong>August 24</strong>
+<div style="font-family: monospace; white-space: pre-line;">
+DAL10    POD 4    01:00 UTC
+FRA05    POD 1    03:00 UTC
+DAL08    POD 1    05:00 UTC
+DAL08    POD 2    05:00 UTC
+SEA01    POD 2    09:00 UTC
+SNG01    POD 1    11:00 UTC
+TOK02    POD 1    15:00 UTC
+SYD01    POD 1    17:00 UTC
+AMS01    POD 2    19:00 UTC
+OSL01    POD 1    21:00 UTC
+LON06    POD 1    23:00 UTC
+</div>
+<br/>
+
+<strong>August 25</strong>
+<div style="font-family: monospace; white-space: pre-line;">
+FRA04    POD 1    01:00 UTC
+DAL01    POD 4    03:00 UTC
+DAL01    POD 5    03:00 UTC
+DAL06    POD 1    05:00 UTC
+SJC01    POD 1    07:00 UTC
+SEA01    POD 1    07:00 UTC
+DAL09    POD 6    09:00 UTC
+SAO01    POD 1    11:00 UTC
+HKG02    POD 2    13:00 UTC
+WDC01    POD 2    21:00 UTC
+WDC01    POD 3    23:00 UTC
+</div>
+<br/>
+
+<strong>August 26</strong>
+<div style="font-family: monospace; white-space: pre-line;">
+WDC01    POD 4    01:00 UTC
+WDC03    POD 1    03:00 UTC
+WDC03    POD 2    03:00 UTC
+DAL05    POD 1    05:00 UTC
+DAL05    POD 2    07:00 UTC
+SJC01    POD 3    09:00 UTC
+SJC01    POD 2    11:00 UTC
+MEL01    POD 1    13:00 UTC
+SYD04    POD 1    15:00 UTC
+MON01    POD 1    21:00 UTC
+MON01    POD 2    23:00 UTC
+</div>
+<br/>
+
+<strong>August 27</strong>
+<div style="font-family: monospace; white-space: pre-line;">
+MIL01    POD 1    01:00 UTC
+DAL12    POD 1    03:00 UTC
+DAL12    POD 2    05:00 UTC
+WDC01    POD 1    07:00 UTC
+DAL13    POD 2    09:00 UTC
+DAL13    POD 1    11:00 UTC
+SJC03    POD 1    13:00 UTC
+HKG02    POD 1    19:00 UTC
+</div>
+<br/>
+<strong>September 4</strong>
+<div style="font-family: monospace; white-space: pre-line;">
+LON02    POD 2    03:00 UTC
+DAL09    POD 3    05:00 UTC
+DAL05    POD 4    07:00 UTC
+DAL09    POD 4    09:00 UTC
+SJC03    POD 2    11:00 UTC
+FRA02    POD 1    21:00 UTC
+FRA02    POD 2    23:00 UTC
+</div>
+<br/>
+
+<strong>September 5</strong>
+<div style="font-family: monospace; white-space: pre-line;">
+DAL09    POD 1    01:00 UTC
+DAL09    POD 2    03:00 UTC
+DAL06    POD 2    05:00 UTC
+DAL10    POD 3    07:00 UTC
+DAL10    POD 1    09:00 UTC
+DAL10    POD 2    11:00 UTC
+PAR01    POD 1    21:00 UTC
+AMS03    POD 1    23:00 UTC
+</div>
+<br/>
+
+<strong>September 6</strong>
+<div style="font-family: monospace; white-space: pre-line;">
+AMS03    POD 2    01:00 UTC
+HOU02    POD 2    05:00 UTC
+WDC07    POD 1    07:00 UTC
+DAL05    POD 3    09:00 UTC
+SEO01    POD 1    11:00 UTC
+AMS01    POD 1    19:00 UTC
+LON02    POD 1    21:00 UTC
+TOR01    POD 1    23:00 UTC
+</div>
+
+<br/>
+<strong>September 7</strong>
+<div style="font-family: monospace; white-space: pre-line;">
+TOR01    POD 2    01:00 UTC
+WDC06    POD 1    03:00 UTC
+WDC01    POD 5    05:00 UTC
+WDC01    POD 6    07:00 UTC
+SJC04    POD 1    09:00 UTC
+LON04    POD 1    11:00 UTC
+</div>
+<br/>
+
+<strong>September 8</strong>
+<div style="font-family: monospace; white-space: pre-line;">
+WDC04    POD 4    01:00 UTC
+WDC04    POD 1    03:00 UTC
+WDC04    POD 2    05:00 UTC
+WDC04    POD 3    07:00 UTC
+SNG01    POD 2    09:00 UTC
+</div>
           </div>
 
           <a name="updates"></a>
           <h4>Updates</h4>
-          <p>Update 2018-01-04 01:00 UTC: Updated planned maintenance times and included a table of datacenters and pods.</p>
-          <p>Update 2018-01-05 18:30 UTC: Correct UTC start times for Germany / US South</p>
-
-          <p id="dal05-pod4-start"    > Update 2018-01-05 07:30 UTC: the first phase of the maintenance in US South started</p>
-          <p id="dal05-pod4-finish"   > Update 2018-01-05 04:00 UTC: the first phase of the maintenance in US South completed</p>
-          <p id="fra02-pod1-start"    > Update 2018-01-05 16:30 UTC: the first phase of the maintenance in Germany started</p>
-          <p id="dal06-pod1-start"    > Update 2018-01-05 16:30 UTC: the second phase of the maintenance in US South started</p>
-          <p id="fra02-pod1-finish"   > Update 2018-01-05 18:45 UTC: the first phase of the maintenance in Germany completed</p>
-          <p id="dal06-pod1-finish"   > Update 2018-01-05 18:55 UTC: the second phase of the maintenance in US South completed</p>
-          <p id="dal09-pod1-2-start"  > Update 2018-01-05 19:45 UTC: the third phase of the maintenance in US South started</p>
-          <p id="fra02-pod2-start"    > Update 2018-01-05 21:00 UTC: the second phase of the maintenance in Germany started</p>
-          <p id="dal09-pod1-2-finish" > Update 2018-01-05 22:45 UTC: the third phase of the maintenance in US South completed</p>
-          <p id="lon02-pod1-start"    > Update 2018-01-05 23:00 UTC: the first phase of the maintenance in the United Kingdom started</p>
-          <p id="fra02-pod2-finish"   > Update 2018-01-05 23:08 UTC: the second phase of the maintenance in Germany completed</p>
-          <p id="lon02-pod1-finish"   > Update 2018-01-06 00:30 UTC: the first phase of the maintenance in the United Kingdom completed</p>
-          <p id="lon02-pod2-start"    > Update 2018-01-06 01:00 UTC: the second phase of the maintenance in the United Kingdom started</p>
-          <p id="dal10-pod2-start"    > Update 2018-01-06 06:30 UTC: the fourth phase of the maintenance in US South started</p>
-          <p id="lon02-pod2-finish"   > Update 2018-01-06 08:50 UTC: the second phase of the maintenance in the United Kingdom completed</p>
-          <p id="dal10-pod2-finish"   > Update 2018-01-06 19:47 UTC: the fourth phase of the maintenance in US South completed</p>
-          <p id="syd04-01-pod1-start" > Update 2018-01-06 23:00 UTC: the maintenance in Sydney started</p>
-          <p id="syd04-01-pod1-finish"> Update 2018-01-07 03:50 UTC: the maintenance in Sydney completed</p>
-          <p id="wdc04-pod4-start"    > Update 2018-01-07 23:30 UTC: the first phase of the maintenance in US East started</p>
-          <p id="wdc04-pod4-finish"   > Update 2018-01-08 01:00 UTC: the first phase of the maintenance in US East completed</p>
-          <p id="wdc06-07-pod1-start" > Update 2018-01-08 06:32 UTC: the second phase of the maintenance in US East started</p>
-          <p id="wdc06-07-pod1-finish"> Update 2018-01-08 11:00 UTC: the second phase of the maintenance in US East completed</p>
+          <p id="initial-update">Update 2018-08-17 21:00 UTC: Initial maintenance schedule posted</p>
         </article>
       </div>
     </div>
