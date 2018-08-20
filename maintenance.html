@@ -111,10 +111,21 @@
             <p class="style-scope doc-content">
               Customers are responsible for managing their IBM Kubernetes Service worker machines.</p>
 
-            <p class="style-scope doc-content">Customers using the IBM Kubernetes Service are advised to make use of Multi-Zone Region
-              capabilities where available (us-south, us-east, eu-gb, eu-de) in order to maintain optimal workload availability during
-              the reboots. During the reboot cycles, customers may see periods of time where their IBM Kubernetes Service masters are
-              unavailable for a short period of time. This is expected and should recover automatically.
+            <p class="style-scope doc-content">
+              Customers using the IBM Cloud Kubernetes Service are advised to make use of Multi-Zone Region capabilities
+               where available (us-south, us-east, eu-gb, eu-de) in order to maintain optimal workload availability during the reboots. 
+               During the reboot cycles, customers may see periods of time where their Kubernetes  masters are unavailable for a short 
+               period of time. This is expected and should recover automatically. It is important to note that the Kubernetes data plane 
+               is not dependent on the control plane. While the master cannot be called to create, update, or delete resources during an 
+               outage, all applications and networking function are unaffected during this outage. </p>
+              
+               <p class="style-scope doc-content">
+                 Customers with mission critical applications should consider the use of multiple regions.  
+                 See <a href="https://console.bluemix.net/docs/containers/cs_clusters_planning.html#multiple_clusters" target="_blank">the documentation</a> for more information.
+               </p>
+               <p class="style-scope doc-content">
+                  Note: Your IBM Cloud Kubernetes Service bare metal worker nodes will not be affected by this maintenance. The Kubernetes master for these workers will still see an interruption in service.
+               </p>
             </p>
 
             <h3 class="style-scope doc-content">IBM Cloud Dedicated regions</h3>
