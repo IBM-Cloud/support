@@ -144,49 +144,62 @@
 
 <!--
         <div id="componentsched"><a name="componentsched"></a>
-          <h4>Schedule for Public Regions and Services</h4>
+          <h2 class="style-scope doc-content">Schedule for Public Regions and Services</h2>
 
-          <ul>
-            <li>All times in are in Universal Time (UTC)</li>
-            <li>All times and durations are approximate</li>
-            <li>Unless otherwise noted, expect that major Services within one IBM Cloud region may be unavailable (including for
+          <ul  class="style-scope doc-content">
+            <li class="style-scope doc-content">All times in are in Universal Time (UTC)</li>
+            <li class="style-scope doc-content">All times and durations are approximate</li>
+            <li class="style-scope doc-content">Unless otherwise noted, expect that major Services within one IBM Cloud region may be unavailable (including for
               Syndication) during roughly the same time windows as the core IBM Cloud platform for that region</li>
           </ul>
-          <table width="95%">
+          <table class="style-scope doc-content" width="95%">
+            <thead>
+
+              <tr class="style-scope doc-content doc-tr-even">
+                <th class="style-scope doc-content" width="161">Service or Component Name</th>
+                <th class="style-scope doc-content" width="204">Maintenance Windows</th>
+                <th class="style-scope doc-content" width="172">Notes</th>
+              </tr>
+            </thead>
             <tbody>
 
-              <tr bgcolor="#BDD6EE">
-                <td width="161"><strong>Service or Component Name</strong>
-                  <p class="style-scope doc-content"></p>
+              <tr class="style-scope doc-content doc-tr-odd ">
+                <td class="style-scope doc-content" width="161">
+                  Core IBM Cloud Platform
+                  <br/> US-SOUTH (US South)
                 </td>
-                <td width="204">
-                  <p class="style-scope doc-content"><strong>Maintenance Windows</strong></p>
+                <td class="style-scope doc-content" width="204">
+                  2018-09-04, 05:00 UTC
+                  <br/> 2018-09-04, 07:00 UTC
+                  <br/> 2018-09-04, 09:00 UTC
                 </td>
-                <td width="172">
-                  <p class="style-scope doc-content"><strong>Notes</strong></p>
-                </td>
+                <td class="style-scope doc-content" width="172">Zero or minimal disruption expected.</td>
               </tr>
 
-              <tr>
-                <td width="161">
-                  <p class="style-scope doc-content">Core IBM Cloud Platform</p>
-                  <p class="style-scope doc-content">US-SOUTH (US South)</p>
+              <tr class="style-scope doc-content doc-tr-even">
+                <td class="style-scope doc-content" width="161">
+                  Core IBM Cloud Platform
+                  <br/> US-SOUTH (US South)
                 </td>
-                <td width="204">
-                  <p class="style-scope doc-content">2018-09-04, 05:00 UTC</p>
-                  <p class="style-scope doc-content">2018-09-04, 07:00 UTC</p>
-                  <p class="style-scope doc-content">2018-09-04, 09:00 UTC</p>
+                <td class="style-scope doc-content" width="204">
+                  2018-09-04, 05:00 UTC
+                  <br/> 2018-09-04, 07:00 UTC
+                  <br/> 2018-09-04, 09:00 UTC
                 </td>
-                <td width="172">
-                  <p class="style-scope doc-content">Zero or minimal disruption expected.</p>
-                </td>
+                <td class="style-scope doc-content" width="172">Zero or minimal disruption expected.</td>
               </tr>
+
             </tbody>
           </table>
-          <strong>Notes:</strong>
-          <ol>
-            <li><strong>ServiceName</strong>: notes</li>
-          </ol>
+-->
+<!--
+          <div  class="style-scope doc-content">
+            <p class="style-scope doc-content"><strong>Notes:</strong>
+            <ol class="style-scope doc-content">
+              <li class="style-scope doc-content"><strong>ServiceName</strong>: notes</li>
+            </ol>
+            </p>
+          </div>
         </div>
 -->
 
@@ -228,10 +241,10 @@ FRA04    POD 1    01:00 UTC
 DAL01    POD 4    03:00 UTC
 DAL01    POD 5    03:00 UTC
 DAL06    POD 1    05:00 UTC
-SJC01    POD 1    07:00 UTC
-SEA01    POD 1    07:00 UTC
+SAO01    POD 1    07:00 UTC
+SEA01    POD 1    07:30 UTC
 DAL09    POD 6    09:00 UTC
-SAO01    POD 1    11:00 UTC
+SJC01    POD 1    11:00 UTC
 HKG02    POD 2    13:00 UTC
 WDC01    POD 2    21:00 UTC
 WDC01    POD 3    23:00 UTC
@@ -267,13 +280,18 @@ HKG02    POD 1    19:00 UTC
 </div>
 <br/>
 
+<strong>August 28</strong>
+<div class="pod-schedule">
+LON02    Pod 2    03:00 UTC
+</div>
+<br/>
+
 <strong>September 4</strong>
 <div class="pod-schedule">
-LON02    POD 2    03:00 UTC
 DAL09    POD 3    05:00 UTC
 DAL05    POD 4    07:00 UTC
 DAL09    POD 4    09:00 UTC
-SJC03    POD 2    11:00 UTC
+SJC03    Pod 2    11:00 UTC
 FRA02    POD 1    21:00 UTC
 FRA02    POD 2    23:00 UTC
 </div>
@@ -312,7 +330,7 @@ WDC06    POD 1    03:00 UTC
 WDC01    POD 5    05:00 UTC
 WDC01    POD 6    07:00 UTC
 SJC04    POD 1    09:00 UTC
-LON04    POD 1    11:00 UTC
+LON04    POD 1    23:00 UTC
 </div>
 <br/>
 
@@ -324,6 +342,8 @@ WDC04    POD 2    05:00 UTC
 WDC04    POD 3    07:00 UTC
 SNG01    POD 2    09:00 UTC
 </div>
+<br/>
+
           </div>
         </div>
 

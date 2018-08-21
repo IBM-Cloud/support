@@ -93,10 +93,46 @@ a.doc-content {
   text-decoration: none;
 }
 
-/* *.doc-content {
+table.doc-content {
+  margin: 1rem 0;
+  width: 100%;
+  font-size: 1em;
+  line-height: 2em;
+  font-weight: 200;
+  border-bottom: 1px solid #e0e6eb;
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+tr.doc-tr-even.doc-content {
+  background-color: #f7f9fa;
+}
+
+th.doc-content {
+  color: #3d70b2;
+  text-align: left;
+  min-width: 150px;
+  font-weight: 700;
+  padding: 8px 15px;
+  border-bottom: 2px solid #5596e6;
+  font-size: .875rem;
+}
+
+td.doc-content {
+  word-break: normal;
+  min-width: 100px;
+  font-weight: 400;
+  vertical-align: top;
+  padding: 1em;
+  color: #3b4b54;
+  line-height: 21px;
+  font-size: 100%;
+}
+
+*.doc-content {
   box-sizing: border-box;
   font-size: .875rem;
-} */
+}
 
 .summary-details {
   padding-left: 20px;
