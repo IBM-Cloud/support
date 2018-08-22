@@ -64,7 +64,7 @@
         <!-- <p style="font-size:250%"><b>DRAFT - NOT FOR PUBLICATION</b></p> -->
 
         <p class="last-updated doc-content">Last Update:
-            2018-08-20 15:15 UTC: Updated schedule. SYD01 POD 1, AMS01 POD 2, SYD04 POD 1, and HKG02 POD 1 updated
+            2018-08-22 14:45 UTC: Updated schedule. SYD01 POD 1 and SNG01 POD 1 updated
         </p>
 
         <!-- <h2 class="style-scope doc-content">Table of Contents</h2> -->
@@ -113,14 +113,14 @@
 
             <p class="style-scope doc-content">
               Customers using the IBM Cloud Kubernetes Service are advised to make use of Multi-Zone Region capabilities
-               where available (us-south, us-east, eu-gb, eu-de) in order to maintain optimal workload availability during the reboots. 
-               During the reboot cycles, customers may see periods of time where their Kubernetes  masters are unavailable for a short 
-               period of time. This is expected and should recover automatically. It is important to note that the Kubernetes data plane 
-               is not dependent on the control plane. While the master cannot be called to create, update, or delete resources during an 
+               where available (us-south, us-east, eu-gb, eu-de) in order to maintain optimal workload availability during the reboots.
+               During the reboot cycles, customers may see periods of time where their Kubernetes  masters are unavailable for a short
+               period of time. This is expected and should recover automatically. It is important to note that the Kubernetes data plane
+               is not dependent on the control plane. While the master cannot be called to create, update, or delete resources during an
                outage, all applications and networking function are unaffected during this outage. </p>
-              
+
                <p class="style-scope doc-content">
-                 Customers with mission critical applications should consider the use of multiple regions.  
+                 Customers with mission critical applications should consider the use of multiple regions.
                  See <a href="https://console.bluemix.net/docs/containers/cs_clusters_planning.html#multiple_clusters" target="_blank">the documentation</a> for more information.
                </p>
                <p class="style-scope doc-content">
@@ -155,49 +155,62 @@
 
 <!--
         <div id="componentsched"><a name="componentsched"></a>
-          <h4>Schedule for Public Regions and Services</h4>
+          <h2 class="style-scope doc-content">Schedule for Public Regions and Services</h2>
 
-          <ul>
-            <li>All times in are in Universal Time (UTC)</li>
-            <li>All times and durations are approximate</li>
-            <li>Unless otherwise noted, expect that major Services within one IBM Cloud region may be unavailable (including for
+          <ul  class="style-scope doc-content">
+            <li class="style-scope doc-content">All times in are in Universal Time (UTC)</li>
+            <li class="style-scope doc-content">All times and durations are approximate</li>
+            <li class="style-scope doc-content">Unless otherwise noted, expect that major Services within one IBM Cloud region may be unavailable (including for
               Syndication) during roughly the same time windows as the core IBM Cloud platform for that region</li>
           </ul>
-          <table width="95%">
+          <table class="style-scope doc-content" width="95%">
+            <thead>
+
+              <tr class="style-scope doc-content doc-tr-even">
+                <th class="style-scope doc-content" width="161">Service or Component Name</th>
+                <th class="style-scope doc-content" width="204">Maintenance Windows</th>
+                <th class="style-scope doc-content" width="172">Notes</th>
+              </tr>
+            </thead>
             <tbody>
 
-              <tr bgcolor="#BDD6EE">
-                <td width="161"><strong>Service or Component Name</strong>
-                  <p class="style-scope doc-content"></p>
+              <tr class="style-scope doc-content doc-tr-odd ">
+                <td class="style-scope doc-content" width="161">
+                  Core IBM Cloud Platform
+                  <br/> US-SOUTH (US South)
                 </td>
-                <td width="204">
-                  <p class="style-scope doc-content"><strong>Maintenance Windows</strong></p>
+                <td class="style-scope doc-content" width="204">
+                  2018-09-04, 05:00 UTC
+                  <br/> 2018-09-04, 07:00 UTC
+                  <br/> 2018-09-04, 09:00 UTC
                 </td>
-                <td width="172">
-                  <p class="style-scope doc-content"><strong>Notes</strong></p>
-                </td>
+                <td class="style-scope doc-content" width="172">Zero or minimal disruption expected.</td>
               </tr>
 
-              <tr>
-                <td width="161">
-                  <p class="style-scope doc-content">Core IBM Cloud Platform</p>
-                  <p class="style-scope doc-content">US-SOUTH (US South)</p>
+              <tr class="style-scope doc-content doc-tr-even">
+                <td class="style-scope doc-content" width="161">
+                  Core IBM Cloud Platform
+                  <br/> US-SOUTH (US South)
                 </td>
-                <td width="204">
-                  <p class="style-scope doc-content">2018-09-04, 05:00 UTC</p>
-                  <p class="style-scope doc-content">2018-09-04, 07:00 UTC</p>
-                  <p class="style-scope doc-content">2018-09-04, 09:00 UTC</p>
+                <td class="style-scope doc-content" width="204">
+                  2018-09-04, 05:00 UTC
+                  <br/> 2018-09-04, 07:00 UTC
+                  <br/> 2018-09-04, 09:00 UTC
                 </td>
-                <td width="172">
-                  <p class="style-scope doc-content">Zero or minimal disruption expected.</p>
-                </td>
+                <td class="style-scope doc-content" width="172">Zero or minimal disruption expected.</td>
               </tr>
+
             </tbody>
           </table>
-          <strong>Notes:</strong>
-          <ol>
-            <li><strong>ServiceName</strong>: notes</li>
-          </ol>
+-->
+<!--
+          <div  class="style-scope doc-content">
+            <p class="style-scope doc-content"><strong>Notes:</strong>
+            <ol class="style-scope doc-content">
+              <li class="style-scope doc-content"><strong>ServiceName</strong>: notes</li>
+            </ol>
+            </p>
+          </div>
         </div>
 -->
 
@@ -224,9 +237,7 @@ FRA05    POD 1    03:00 UTC
 DAL08    POD 1    05:00 UTC
 DAL08    POD 2    05:00 UTC
 SEA01    POD 2    09:00 UTC
-SNG01    POD 1    11:00 UTC
 TOK02    POD 1    15:00 UTC
-SYD01    POD 1    17:00 UTC
 AMS01    POD 2    19:00 UTC
 OSL01    POD 1    21:00 UTC
 LON06    POD 1    23:00 UTC
@@ -284,7 +295,7 @@ LON02    POD 2    03:00 UTC
 </div>
 <br/>
 
-<strong>September 04</strong>
+<strong>September 4</strong>
 <div class="pod-schedule">
 DAL09    POD 3    05:00 UTC
 DAL05    POD 4    07:00 UTC
@@ -295,7 +306,7 @@ FRA02    POD 2    23:00 UTC
 </div>
 <br/>
 
-<strong>September 05</strong>
+<strong>September 5</strong>
 <div class="pod-schedule">
 DAL09    POD 1    01:00 UTC
 DAL09    POD 2    03:00 UTC
@@ -308,7 +319,7 @@ AMS03    POD 1    23:00 UTC
 </div>
 <br/>
 
-<strong>September 06</strong>
+<strong>September 6</strong>
 <div class="pod-schedule">
 AMS03    POD 2    01:00 UTC
 HOU02    POD 2    05:00 UTC
@@ -321,7 +332,7 @@ TOR01    POD 1    23:00 UTC
 </div>
 <br/>
 
-<strong>September 07</strong>
+<strong>September 7</strong>
 <div class="pod-schedule">
 TOR01    POD 2    01:00 UTC
 WDC06    POD 1    03:00 UTC
@@ -332,14 +343,17 @@ LON04    POD 1    23:00 UTC
 </div>
 <br/>
 
-<strong>September 08</strong>
+<strong>September 8</strong>
 <div class="pod-schedule">
 WDC04    POD 4    01:00 UTC
 WDC04    POD 1    03:00 UTC
 WDC04    POD 2    05:00 UTC
 WDC04    POD 3    07:00 UTC
 SNG01    POD 2    09:00 UTC
+SYD01    POD 1    23:00 UTC
+SNG01    POD 1    13:00 UTC
 </div>
+<br/>
           </div>
         </div>
 
@@ -348,6 +362,7 @@ SNG01    POD 2    09:00 UTC
           <div class="style-scope doc-content">
               <p id="initial-update">2018-08-20 13:40 UTC: Initial maintenance schedule posted</p>
               <p id="initial-update">2018-08-20 15:15 UTC: Updated schedule. SYD01 POD 1, AMS01 POD 2, SYD04 POD 1, and HKG02 POD 1 updated</p>
+              <p id="initial-update">2018-08-22 14:45 UTC: Updated schedule. SYD01 POD 1 and SNG01 POD 1 updated</p>
             </div>
         </div>
 
